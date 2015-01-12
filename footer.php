@@ -10,7 +10,7 @@
 </div>
 
 <div class="clear separator"></div>
-hola!!
+hola!! 123
 
 </body>
 <?php wp_footer()?>
