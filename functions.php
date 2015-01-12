@@ -9,7 +9,6 @@ add_image_size('square', 500, 500, true );
 add_image_size('minibox', 500, 200, true );
 add_image_size('midbox', 250, 200, true );
 }
-
  
 add_filter('image_size_names_choose', 'my_image_sizes');
 	function my_image_sizes($sizes) {
@@ -170,6 +169,8 @@ function get_icon_for_attachment($post_id) {
 }
 // call it like this:
 //echo '<img src="'.get_icon_for_attachment($my_attachment->ID).'" />';
+
+
 
 ?>
 <?php //include_once( rtrim( dirname( __FILE__ ), '/' ) . '/acf-taxonomy-field/taxonomy-field.php' );?>

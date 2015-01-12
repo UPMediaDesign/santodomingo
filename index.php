@@ -157,7 +157,4 @@
 	</div>
 </section>
 
-<?php //get_template_part('searchbar')?>
-
-
 <?php get_footer()?>
