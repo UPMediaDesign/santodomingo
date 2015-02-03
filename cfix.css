@@ -1,3 +1,46 @@
+/*
+ColorChart
+color 1: 		#155980
+color 2: 		#1970a1
+color 3: 		#1183c4
+color 4: 		#1577af
+green accent: 	#56a32a
+yellow: 		#f79700
+emerald:		#08bc94
+redtv:			#ce313f
+bluseguridad:	#003d6f
+transito:		#ffc800
+aseo:			#bd355b
+rentas:			#4e5b91
+obras:			#ff801a
+medioambiente:	#56a32a
+dideco:			#008e82
+prodesal:		#77ddd7
+presupuesto:	#4e5b91s
+*/
+.clr-1	{ background-color:#155980}
+.clr-2	{ background-color:#1970a1}
+.clr-3	{ background-color:#1183c4}
+.clr-4	{ background-color:#1577af}
+.clr-5	{ background-color:#56a32a}
+.clr-6	{ background-color:#f79700}
+.clr-7	{ background-color:#08bc94}
+.clr-8	{ background-color:#ce313f}
+.clr-9	{ background-color:#003d6f}
+.clr-10	{ background-color:#ffc800}
+.clr-11	{ background-color:#bd355b}
+.clr-12	{ background-color:#4e5b91}
+.clr-13	{ background-color:#ff801a}
+.clr-14	{ background-color:#56a32a}
+.clr-15	{ background-color:#008e82}
+.clr-16	{ background-color:#77ddd7}
+.clr-17	{ background-color:#4e5b91}
+
 /*******************************************************************************************/
-/*************************************CARLANGAS CSS*****************************************/
+/*************************************Style Carlos************************************************/
 /*******************************************************************************************/
+
+/* PAGE COMÚN */
+.named{padding-top: 14.95%;}
+.titular h1, .named h1{font-size:26px; font-family: 'Pluto'; text-align: right; color:#fff;}
+ul.titular li{text-align: right; font-family: Georgia, serif; font-size:14px; color:#fff; float:right; clear:both; }

@@ -1,3 +1,24 @@
+<?php
+    $BASE_URL = "http://query.yahooapis.com/v1/public/yql";
+    $yql_query = 'select item from weather.forecast where woeid = 350357';
+    $yql_query_url = $BASE_URL . "?q=" . urlencode($yql_query) . "&u=c&format=json";
+	
+	$session = curl_init($yql_query_url);
+    curl_setopt($session, CURLOPT_RETURNTRANSFER,true);
+    $json = curl_exec($session);
+    // Convert JSON to PHP object
+    $temps =  json_decode($json);
+    //var_dump($temps->query->results->channel->item->condition);
+	
+	function to_celsius($f){
+		$celsius=5/9*($f-32);
+        return $celsius ;
+	}
+	
+	$max = to_celsius($temps->query->results->channel->item->forecast[0]->high);
+	$min = to_celsius($temps->query->results->channel->item->forecast[0]->low);
+	
+?>                                    
 <div class="searchandsocial navbar-fixed-top">
 	<div class="megacontainer">
 		<div class="row">
@@ -14,7 +35,7 @@
             <?php }?>
             
             <div class="col-xs-12 col-md-6">
-            	<div class="row">
+            	<div style="margin-right:-30px">
                     <div class="searchh col-xs-5">
                         <form method="get" id="searchform" action="<?php bloginfo('url')?>">
                             <label class="hidden" for="s"></label>
@@ -26,15 +47,16 @@
                     
                     <div class="date col-xs-2 col-esp skw clr-3">
                     	<div class="inskw">
-                            <div class="mes izq">Septiembre</div>
-                            <div class="dia der">29</div>
+                            <div class="mes izq"><?php echo date('F')?></div>
+                            <div class="clear"></div>
+                            <div class="dia der"><?php echo date('j')?></div>
                         </div>
                     </div>
                    
                     <div class="condition col-xs-2 skw col-esp">
                     	<div class="inskw">
-                            <div class="mindeg izq">13ª <span class="fa fa-cloud fa-fw"></span></div>
-                            <div class="maxdeg der">28ª <span class="fa fa-cloud fa-fw actdeg"></span></div>
+                            <div class="mindeg izq"><?php echo round($min);?>ª <span class="fa fa-cloud fa-fw"></span></div>
+                            <div class="maxdeg der"><?php echo round($max);?>ª <span class="fa fa-cloud fa-fw actdeg"></span></div>
                         </div>
                     </div> 
                    

@@ -1,10 +1,12 @@
 <?php if ( function_exists('add_theme_support') ) {
 add_theme_support('post-thumbnails');
+add_image_size('wider', 1920, 550, true );
 add_image_size('slider', 1100, 550, true );
 add_image_size('col-6', 550, 430, true );
 add_image_size('col-6-mid', 550, 300, true );
 add_image_size('col-4', 370, 290, true );
 add_image_size('col-3', 275, 215, true );
+add_image_size('tall', 500, 700, true );
 add_image_size('square', 500, 500, true );
 add_image_size('minibox', 500, 200, true );
 add_image_size('midbox', 250, 200, true );
@@ -47,28 +49,87 @@ add_action('wp_enqueue_scripts', 'call_scripts');
 <?php
 //Post type register
 
- 
-/* add_action('init', 'pais_register');
-function pais_register() {
+add_action('init', 'alcaldes_register');
+function alcaldes_register() {
     $args = array(
-        'label' => 'Países',
-        'singular_label' => 'País',
+        'label' => 'Alcaldes',
+        'singular_label' => 'Alcalde',
         'public' => true,
-		'menu_position' => 5, 
+		'menu_position' => 15, 
         '_builtin' => false,
         'capability_type' => 'post',
 		'has_archive' => false,
         'hierarchical' => false,
-        'rewrite' => array( 'slug' => 'donde-estamos/paises'),
+        'rewrite' => array( 'slug' => 'alcaldes'),
         'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' )
     );
-    register_post_type('pais', $args);
+    register_post_type('alcaldes', $args);
     flush_rewrite_rules();
 }
 
-register_taxonomy("continente", array('pais'), array("hierarchical" => true, "label" => "Continentes", "singular_label" => "Continente", "rewrite" => true));
+add_action('init', 'staff_register');
+function staff_register() {
+    $args = array(
+        'label' => 'Staff',
+        'singular_label' => 'Staff',
+        'public' => true,
+		'menu_position' => 14, 
+        '_builtin' => false,
+        'capability_type' => 'post',
+		'has_archive' => false,
+        'hierarchical' => false,
+        'rewrite' => array( 'slug' => 'staff'),
+        'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' )
+    );
+    register_post_type('staff', $args);
+    flush_rewrite_rules();
+}
 
- */
+add_action('init', 'documentos_register');
+function documentos_register() {
+    $args = array(
+        'label' => 'Documentos',
+        'singular_label' => 'Documento',
+        'public' => true,
+		'menu_position' => 14, 
+        '_builtin' => false,
+        'capability_type' => 'post',
+		'has_archive' => true,
+        'hierarchical' => false,
+        'rewrite' => array( 'slug' => 'documentos'),
+        'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' , 'revisions' )
+    );
+    register_post_type('documentos', $args);
+    flush_rewrite_rules();
+}
+
+add_action('init', 'turismo_register');
+function turismo_register() {
+    $args = array(
+        'label' => 'Turismo',
+        'singular_label' => 'turismo',
+        'public' => true,
+		'menu_position' => 10, 
+        '_builtin' => false,
+        'capability_type' => 'post',
+		'has_archive' => true,
+        'hierarchical' => false,
+        'rewrite' => array( 'slug' => 'turismo'),
+        'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' , 'revisions' )
+    );
+    register_post_type('turismo', $args);
+    flush_rewrite_rules();
+}
+
+
+
+
+register_taxonomy("servicios", array('post' , 'staff' , 'documentos'), array("hierarchical" => true, "label" => "Servicios", "singular_label" => "Servicio", "rewrite" => true));
+
+register_taxonomy("area", array('documentos'), array("hierarchical" => true, "label" => "Tipos", "singular_label" => "Tipo", "rewrite" => true));
+
+register_taxonomy("tipo", array('turismo'), array("hierarchical" => true, "label" => "Tipos", "singular_label" => "Tipo", "rewrite" => true));
+
 
 ?>
 
@@ -110,28 +171,28 @@ function get_type_for_attachment($post_id) {
     case 'image/jpeg':
     case 'image/png':
     case 'image/gif':
-      return 'Imagen'; break;
+      return 'img'; break;
     case 'video/mpeg':
     case 'video/mp4': 
     case 'video/quicktime':
-      return 'Video'; break;
+      return 'Vid'; break;
     case 'text/csv':
     case 'text/plain': 
     case 'text/xml':
-      return 'Documento'; break;
+      return 'Doc'; break;
 	case 'application/pdf':
 		return 'PDF'; break;
 	case 'application/vnd.openxmlformats-officedocument.wordprocessingml.document':
 	case 'application/msword':
-		return 'MS .Doc'; break;
+		return '.Doc'; break;
 	case 'application/vnd.ms-excel':
 	case 'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet':
-		return 'MS .Xls'; break;
+		return '.Xls'; break;
 	case 'application/vnd.ms-powerpoint' :
 	case 'application/vnd.openxmlformats-officedocument.presentationml.presentation':
-		return 'MS .Ppt'; break;
+		return 'Ppt'; break;
     default:
-      return 'Archivo';
+      return 'file';
   }
 }
 // call it like this:
@@ -178,7 +239,18 @@ function get_icon_for_attachment($post_id) {
 add_action( 'pre_get_posts', 'rc_modify_query_limit_posts' );
 function rc_modify_query_limit_posts( $query ) {
 	if( ! is_admin() && $query->is_main_query() ) {
-		$query->set('posts_per_page', '15');
+		$query->set('posts_per_page', '10');
 	}
 }
+?>
+<?php 
+function custom_excerpt_length( $length ) {
+	return 30;
+}
+add_filter( 'excerpt_length', 'custom_excerpt_length', 999 );
+function new_excerpt_more( $more ) {
+	return ' ...';
+}
+add_filter('excerpt_more', 'new_excerpt_more');
+
 ?>

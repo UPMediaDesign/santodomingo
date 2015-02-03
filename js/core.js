@@ -1360,7 +1360,7 @@ jQuery(window).scroll(function(){
             jQuery('.navbar').data('size','big');
 			
             jQuery('.searchandsocial').stop().animate({
-                top:'85px'
+                top:'122px'
             },600);
         }  
     }

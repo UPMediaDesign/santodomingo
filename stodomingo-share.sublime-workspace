@@ -1,0 +1,600 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"st",
+				"strong	Tag"
+			],
+			[
+				"h",
+				"h3	Tag"
+			],
+			[
+				"background",
+				"background-position"
+			],
+			[
+				"conten",
+				"contenedor-footer"
+			],
+			[
+				"padding",
+				"padding-top"
+			],
+			[
+				"paddin",
+				"padding-right"
+			],
+			[
+				"margin",
+				"margin-bottom"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"blue",
+				"blue-timing"
+			],
+			[
+				"form",
+				"form-container"
+			],
+			[
+				"op",
+				"open_sansregular"
+			],
+			[
+				"backgrou",
+				"background-image"
+			],
+			[
+				"se",
+				"section	Tag"
+			],
+			[
+				"btn",
+				"btn-primary"
+			],
+			[
+				"hoe",
+				"hover"
+			],
+			[
+				"pa",
+				"panel-body"
+			],
+			[
+				"margi",
+				"margin-left"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"backgr",
+				"background-image"
+			],
+			[
+				"border",
+				"border-radius"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"pad",
+				"padding-bottom"
+			],
+			[
+				"te",
+				"text-align"
+			],
+			[
+				"i",
+				"italic"
+			],
+			[
+				"bol",
+				"bolder"
+			],
+			[
+				"f",
+				"font-family"
+			],
+			[
+				"mar",
+				"margin"
+			],
+			[
+				"MARGIN",
+				"margin-top"
+			],
+			[
+				"fo",
+				"focus"
+			],
+			[
+				"max",
+				"max-height"
+			],
+			[
+				"padd",
+				"padding"
+			],
+			[
+				"bac",
+				"background-size"
+			],
+			[
+				"no",
+				"nowrap"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"di",
+				"display"
+			],
+			[
+				"marg",
+				"margin-left"
+			],
+			[
+				"s",
+				"solid"
+			],
+			[
+				"d",
+				"display"
+			],
+			[
+				"bo",
+				"bottom"
+			],
+			[
+				"borde",
+				"border-bottom"
+			],
+			[
+				"o",
+				"overflow"
+			],
+			[
+				"re",
+				"repeat-y"
+			],
+			[
+				"col",
+				"colBig"
+			],
+			[
+				"in",
+				"input	Tag"
+			],
+			[
+				"tr",
+				"transparent"
+			],
+			[
+				"bor",
+				"border-top"
+			],
+			[
+				"text",
+				"text-align"
+			],
+			[
+				"ma",
+				"margin"
+			],
+			[
+				"wi",
+				"width"
+			],
+			[
+				"border-r",
+				"border-right"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"backgroun",
+				"background-color"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"console":
+	{
+		"height": 0.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/upmedia/GitHub/santodomingo/municipio.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_44.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/index.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_de_la_semana_53.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/as_lateral.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/as_header_menu.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_de_la_semana.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_de_la_semana_52.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_43.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_40.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_41.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_39.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_25.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_postre_navidad_3.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_postre_navidad_2.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_postre_navidad_1.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_navidad_6.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/css/estilo.css",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/recetas_navidenas.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_navidad_5.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_navidad_4.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_navidad_3.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_navidad_2.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_navidad_1.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_ens_navidad_2.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_ens_navidad_1.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_ens_navidad_5.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_ens_navidad_4.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_ens_navidad_3.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_de_la_semana_51.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/recetas_todos.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/recetas_postres.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/recetas_ensaladas.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/recetas_plato_fondo.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_42.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticias.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_diciembre_16_14.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_diciembre_09_14.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columnas.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_de_la_semana_50.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_diciembre_08_14.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_noviembre_09_14.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_diciembre_01_14.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_octubre_11_11.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_noviembre_29_14.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_de_la_semana_48.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_octubre_11_10.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_octubre_11_08.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_36.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_de_la_semana_45.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/js/jcarousellite_1.0.1.js",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/js/chili-1.7.pack.js",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_34.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_33.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_32.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_31.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_30.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_octubre_11_06.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_octubre_11_05.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_octubre_11_03.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_octubre_11_07.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_11_06.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_octubre_11_04.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_octubre_11_02.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_octubre_11_01.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_octubre_11_00.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_de_la_semana_43.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/recetas_menu.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_de_la_semana_41.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_de_la_semana_a.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_de_la_semana_42.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_de_la_semana_36.php",
+		"/Users/upmedia/Desktop/Sitio Alimentate Sano/noticia_2014_junio_09_00.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/formulario/php/enviar-landing.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/formulario/php/enviar_admision.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/style.css",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/tpl_admision.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/.htaccess",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/tpl_admision_2.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/tpl_egresados_inicio.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/single.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/tpl_acreditacion.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/header.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/footer.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/header-egresados.php",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/error_log",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/.htaccess-bak",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile/wp-content/themes/ipchile_2013/archive.php",
+		"/Users/upmedia/GitHub/IPChile/landing.html",
+		"/Users/upmedia/Dropbox/Super Team/@ipchile/Landing/IPChile/index.html",
+		"/Users/upmedia/Desktop/Sitio IP Chile/ipchile_capacita/__db__/promo.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/assets/js/bootstrap.js",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/assets/js/app.js",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/archive-jurisprudencia.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/page-17.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/page-linea-investigacion.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/single-eventos.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/single-directorio.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/search.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/header.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/__archive-publicaciones.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/archive-directores.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/comments.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/page.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/page-directores.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/fullpage.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/category.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/category-noticias.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/index.php",
+		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/functions.php",
+		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/js/jquery.bxslider.js",
+		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/js/jquery.easing.1.3.js",
+		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/bootstrap/css/bootstrap-theme.min.css",
+		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/bootstrap/css/bootstrap-theme.css.map",
+		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/functions.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/index.html",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page_banners.php",
+		"/Users/upmedia/Desktop/SITIOS/UPMEDIA/public_html/regcom/wp-content/themes/front/page-actividades.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/style.css",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/footer.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/header.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/search.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/wp-config.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/wp-config-sample.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/functions.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/author.php",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/superfish.js",
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/theme_trust.js"
+	],
+	"find":
+	{
+		"height": 35.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"recetas",
+			"navidena",
+			"mCustomScrollBox mCS-light",
+			"tip_semana",
+			"ipchile",
+			"ipcchile",
+			"error",
+			"id",
+			"errorSede",
+			"$origen",
+			"enviado",
+			"enviado desde",
+			"btn-chat",
+			"wp_paginate",
+			"row marginTop3 marginBottom3",
+			"google",
+			"menu-jurisprudencia",
+			"nav-eventos",
+			"box-base",
+			"wp_nav_menu",
+			"menu-menu-1",
+			"wp_nav_menu",
+			".panel-default>.panel-heading",
+			"data-parent",
+			"data-parent=",
+			"data-parent=\"accordion\"",
+			"collapse",
+			"caracteristicas_cancer",
+			"accordion",
+			"url(",
+			"url()",
+			".panel-default>.panel-heading",
+			".panel-default>",
+			".panel-default>.panel-heading",
+			".panel-heading",
+			".panel-default>.panel-heading",
+			".panel-body",
+			"panel-group",
+			"col-md-6",
+			"button",
+			" span.amount",
+			"#top",
+			"h1.page-title",
+			"tbag",
+			"input[type=text], input.input-text, textarea, input.txt, input[type=tel], input[type=email]",
+			"#header .nav-toggle",
+			"ul.products li.product img",
+			"navigation",
+			"wrapper",
+			"footer-wrap",
+			"#header #navigation",
+			"a{",
+			"a{}",
+			"#top ul.nav > li a:hover",
+			"#top",
+			"#top .wc-nav li.cart a .contents",
+			"p{",
+			"p",
+			".footer-wrap",
+			".footer-wrap.footer-wrap",
+			".footer-wrap",
+			"search",
+			"navigation",
+			"slide",
+			"description",
+			"slide",
+			".fav-caption",
+			"indicates",
+			"inside",
+			"background-image",
+			".pic-page img",
+			"quad",
+			".login h1 a",
+			"login",
+			"position",
+			"navigation",
+			"navi",
+			"navigation",
+			"navi",
+			"navigation",
+			"navigatiob",
+			"navi",
+			"navigation",
+			"map",
+			"post-thumbnails",
+			"{\n",
+			"navigation",
+			"type and press",
+			"see more",
+			".slider",
+			"bin",
+			"a.nav",
+			"analytics",
+			".lacampana p",
+			"#backslides",
+			"frameVideo",
+			".donarTweet",
+			"slides-container",
+			"backslides",
+			".contentLeft",
+			".donar",
+			"donarTwee",
+			"social",
+			">\n",
+			"boxShareMin",
+			"h1.tit",
+			"bg-complementario-dos",
+			"box",
+			"boxver",
+			".sabanaBoxboxvert",
+			".sabanaBox",
+			"\n	display:block;",
+			"wrapper",
+			"vertical",
+			"slide",
+			"subnav",
+			"heade",
+			".mainNav ul",
+			".mainNav ul li a",
+			"ventajaVertical",
+			".boxSoftware",
+			"        <?",
+			".ventajaBox",
+			"h4",
+			"ventajaUNo",
+			"ventajaBox",
+			"shadow",
+			"lineRi"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 0.0
+	},
+	"input":
+	{
+		"height": 33.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.sftp":
+	{
+		"height": 112.0
+	},
+	"replace":
+	{
+		"height": 0.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 196.0,
+	"status_bar_visible": true
+}

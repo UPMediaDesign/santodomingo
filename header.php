@@ -54,60 +54,14 @@ jQuery(document).ready(function($) {
 	  {
 		featureType: "all",
 		stylers: [
-		  { saturation: -100 }
-		]
-	  },{
-		featureType: "road",
-		elementType: "geometry",
-		stylers: [
-		  { visibility: "off"}
-		]
-	  },{
-		featureType: "poi",
-		elementType: "labels",
-		stylers: [
-		  { visibility: "off" }
-		]
-	  },{
-		featureType: "administrative",
-		elementType: "labels",
-		stylers: [
-		  { visibility: "off" }
-		]
-	  },{
-		featureType: "landscape.natural",
-		elementType: "labels",
-		stylers: [
-		  { visibility: "off" }
-		]
-	  },{
-		featureType: "road",
-		elementType: "labels",
-		stylers: [
-		  { visibility: "off" }
-		]
-	  },{
-		featureType: "landscape" ,
-		elementType: "geometry.fill",
-		stylers: [
-		  { visibility: "off" }
-		]
-	  },{
-		featureType: "administrative.country",
-		elementType: "labels",
-		stylers: [
-		  { visibility: "on" },
-		  { hue: "#e21717" },
-		  { saturation: 100 },
-		  { lightness: 0 },
-		  { gamma: 1.51 }
+		  { saturation: -10 }
 		]
 	  }
 	];
 	
     var mapOptions = {
-      center: new google.maps.LatLng(-32.739055,-67.0574941),
-      zoom: 3,
+      center: new google.maps.LatLng(-33.634987, -71.630344),
+      zoom: 15,
       mapTypeId: google.maps.MapTypeId.ROADMAP,
 	  streetViewControl: false,
 	  mapTypeControl: false,
