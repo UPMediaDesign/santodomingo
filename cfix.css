@@ -116,7 +116,18 @@ border-radius: 5px;}
 .teachnews p{font-style: italic; line-height: 130%;}
 
 /* TEMPLATE MUNICIPIO */
-section#slider .clr-2.skk:after{background-color:#1970a1}
+section#slider .clr-2.skk.desktop:after{background-color:#1970a1}
+#righted.inside.col-lg-10.col-md-offset-2{padding-top:165px !important;}
+#righted.inside p{text-align: right; font-size: 16px; line-height: 140%;}
+.council-intro h3,
+.council h3, 
+.council-intro h4, 
+.council-intro h5{text-align:center;}
+.council-intro p{font-family: Georgia, "Times New Roman",  Times, serif; font-size: 15px; line-height: 160%; font-style: italic; color: #5d5d5d; padding-bottom: 20px; text-align: left;}
+.council p{font-family: Georgia, "Times New Roman",  Times, serif; font-size: 15px; line-height: 160%; font-style: italic; color: #5d5d5d; padding-bottom: 20px; text-align: center;}
+.council img{display:block; text-align:center; text-align:center; margin: 0 auto;}
+.majorlist h3{}
+.civilcouncil h2{margin-top: 0; font-family: 'Pluto'; font-weight: 900; color: #155980; font-size: 26px;}
 
 /* Estilos Responsive */
 @media screen and (min-width: 1024px){}

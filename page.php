@@ -42,15 +42,15 @@
 	<?php foreach($boxes as $box):?>
 		
         
-        <?php if($box['acf_fc_layouts'] == 'col-md-8'){?>
+        <?php if($box['acf_fc_layout'] == 'col-md-8'){?>
 		<section>
-			<container>
+			<div class="container">
 				<div class="row">
 					<div class="col-md-8 col-md-offset-2">
                     	<?php echo apply_filters('the_content' , $box['editor'])?>
                     </div>
 				</div>
-			</container>
+			</div>
 		</section>
         <?php }elseif($box['acf_fc_layout'] == 'col-md-12'){?>
         <section>
