@@ -81,13 +81,37 @@ google.maps.event.addDomListener(window, 'load', initialize);
 	<div class="megacontainer">
 		<div class="row">
         	
-            <div class="col-md-6 col-esp"><a href="#"><img src="//placehold.it/900" alt="" class="img-responsive" /></a></div>
-            <div class="col-md-4 col-esp"><a href="#"><img src="//placehold.it/900" alt="" class="img-responsive" /></a></div>
-            <div class="col-md-2 col-esp"><a href="#"><img src="//placehold.it/900" alt="" class="img-responsive" /></a></div>
-            <div class="col-md-2 col-esp"><a href="#"><img src="//placehold.it/900" alt="" class="img-responsive" /></a></div>
-            <div class="col-md-2 col-esp"><a href="#"><img src="//placehold.it/900" alt="" class="img-responsive" /></a></div>
-            <div class="col-md-2 col-esp"><a href="#"><img src="//placehold.it/900" alt="" class="img-responsive" /></a></div>
-            <div class="col-md-2 col-esp"><a href="#"><img src="//placehold.it/900" alt="" class="img-responsive" /></a></div>
+            <?php $pcount = 0?>
+            <?php foreach($posts as $post):?>
+            <?php $pcount++?>
+            
+			<?php
+				$col = '';
+				$reco = '';
+				if($pcount == 1){$col = 'col-md-6'; $reco = 'mega';}
+				elseif($pcount == 2){$col = 'col-md-4 col-sm-6'; $reco = 'square';}
+				elseif($pcount >= 3){$col = 'col-md-2 col-sm-6'; $reco = 'square';}
+			?>
+            
+            <figure class="<?php echo $col?> col-esp">
+            	<a href="<?php echo get_permalink($place->ID)?>">
+            		<?php echo get_the_post_thumbnail($post->ID , $reco , array('class' => 'img-responsive') )?>
+            	</a>
+                <figcaption>
+                	<div class="link"><a href="<?php echo get_permalink($place->ID)?>">+</a></div>
+                	<?php if($pcount == 1){?>
+                		<h3><?php echo $post->post_title?></h3>
+                    	<p><?php echo $post->post_excerpt?></p>
+                    <?php }else{?>
+                    	<h3><?php echo $post->post_title?></h3>
+					<?php }?>
+                    <div class="clear"></div>
+                </figcaption>
+            </figure>
+            
+            <?php endforeach?>
+            
+            
 
         </div>
 	</div>

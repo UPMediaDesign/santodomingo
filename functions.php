@@ -8,6 +8,7 @@ add_image_size('col-4', 370, 290, true );
 add_image_size('col-3', 275, 215, true );
 add_image_size('tall', 500, 700, true );
 add_image_size('square', 500, 500, true );
+add_image_size('mega', 900, 900, true );
 add_image_size('minibox', 500, 200, true );
 add_image_size('midbox', 250, 200, true );
 }
@@ -238,7 +239,10 @@ function get_icon_for_attachment($post_id) {
 <?php 
 add_action( 'pre_get_posts', 'rc_modify_query_limit_posts' );
 function rc_modify_query_limit_posts( $query ) {
-	if( ! is_admin() && $query->is_main_query() ) {
+	if(! is_admin() && $query->is_post_type_archive){
+		$query->set('posts_per_page', '7');
+	}
+	elseif( ! is_admin() && $query->is_main_query() ) {
 		$query->set('posts_per_page', '10');
 	}
 }

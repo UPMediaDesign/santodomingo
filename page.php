@@ -126,18 +126,20 @@
 	<div class="container">
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
-            <div class="col-xs-8">
-            	<h3>Documentos disponibles</h3>
-            </div>
-            <div class="col-xs-4">
-            	<h5>ver todos los documentos</h5>
+            <div class="row">
+                <div class="col-xs-8">
+                    <h3>Documentos disponibles</h3>
+                </div>
+                <div class="col-xs-4">
+                    <h5><a href="<?php echo get_post_type_archive_link('documentos')?>" class="view-all btn btn-sm btn-primary btn-block">Ver todos los documentos</a></h5>
+                </div>
             </div>
             <div class="clear separator border"></div>
             	<?php foreach($docs as $doc):?>
                 	<article>
                         <div class="row">
-                            <div class="col-md-1">
-                                <a href="<?php echo wp_get_attachment_url(get_field('documento',$doc->ID))?>">
+                            <div class="col-md-1 col-esp">
+                                <a href="<?php echo wp_get_attachment_url(get_field('documento',$doc->ID))?>" class="ico-link clr-<?php echo $post->post_name?>">
                                 	<span class="fa fa-lg <?php echo get_icon_for_attachment(get_field('documento',$doc->ID))?>"></span>
                                 </a> 
                                 <?php //echo get_type_for_attachment(get_field('documento',$doc->ID))?>
@@ -155,6 +157,15 @@
                     </article>
                 	
                 <?php endforeach;?>
+                <div class="row">
+                    <div class="col-xs-8">
+                        <h3>&nbsp;</h3>
+                    </div>
+                    <div class="col-xs-4">
+                        <h5><a href="<?php echo get_post_type_archive_link('documentos')?>" class="view-all btn btn-sm btn-primary btn-block">Ver todos los documentos</a></h5>
+                    </div>
+            	</div>
+                
             </div>
 		</div>
 	</div>

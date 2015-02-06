@@ -309,7 +309,8 @@ presupuesto:	#4e5b91s
 
 section#slider{ height:500px;  margin-top:175px; background-color:#1970a1;}
 .home section#slider{margin-top:115px; height:445px; }
-.parent-pageid-89 section#slider , .single section#slider , .category section#slider{ height:300px;  margin-top:175px; background-color:#1970a1;}
+.parent-pageid-89 section#slider , .single section#slider , .category section#slider { height:300px;  margin-top:175px; background-color:#1970a1;}
+.post-type-archive-documentos section#slider{ height:345px;  margin-top:175px; background-color:#1970a1;}
 section#slider .item{ background-position: top right; background-repeat:no-repeat;}
 
 section#slider .inner{ background-image:url(images/dshadow.png); background-position:bottom center; background-repeat:repeat-x}
@@ -324,6 +325,10 @@ section#slider , section#slider a , section#slider p{ color:#fff; text-decoratio
 section#slider p ,  section#slider .cat{ font-family:Georgia, "Times New Roman", Times, serif; font-size:18px; font-style:italic }
 section#slider a.morelink{font-family: 'Pluto' , helvetica, arial, sans-serif; color:#fff; float:right; font-weight:900; font-size:16px;}
 
+section#slider {
+background-size: 100% auto;
+background-position: center bottom;
+}
 
 .carousel-indicators {
 position: absolute;
@@ -338,11 +343,10 @@ list-style: none;
 left:10%
 }
 
-.single section#slider h1{
-padding: 20px;
-margin: 182px 0 0 0;
-min-height: 118px; font-size:29px;
-}
+.single section#slider h1{padding: 20px;margin: 182px 0 0 0;min-height: 118px; font-size:29px;}
+.single-turismo section#slider{ background-size:100% auto}
+.single-turismo section#slider h1{margin: 292px 0 0 0;}
+.single-turismo section#slider{height:410px}
 
 .bx-wrapper {position: relative;padding: 0;*zoom: 1; z-index:0; }
 .slider .bx-wrapper {position: relative;padding: 0;*zoom: 1; z-index:0; margin-top:85px !important }
@@ -417,6 +421,17 @@ main#turismo .col-md-2{ padding-bottom:1px;}
 
 section#map #map_canvas{ height:500px;}
 
+section#documentos{}
+section#documentos h3 , section#documentos h5{ margin:0px; padding:0px}
+section#documentos .ico-link {padding: 20px; border-radius: 60px;margin-left: 5px;margin-top: 0px;display: block;color: #fff;}
+
+.post-type-archive-turismo figure figcaption h3{ font-size:14px; color:#3d3d3d; margin:0px; padding: 10px 0; text-align: left}
+.post-type-archive-turismo figure figcaption{ background-color:#56a32a; padding:0 0 0 10px; color:#fff; position:absolute; bottom: 0px; width:100% }
+.post-type-archive-turismo figure figcaption p , .post-type-archive-turismo figure figcaption h3{ color:#fff; }
+/*
+.post-type-archive-turismo figure figcaption .link{ float:right}
+.post-type-archive-turismo figure figcaption .link a { padding: 10px 15px 0px 40px;background-color: #fff;display: inline-block;border-top-left-radius: 90px;margin-top: 30px;font-size: 40px;font-weight: 900;color: #000;}
+*/
 .nav-tabs {
 border: none;
 text-align: center;
