@@ -4,8 +4,28 @@
 		"selected_items":
 		[
 			[
+				"text",
+				"text-transform"
+			],
+			[
+				"font",
+				"font-size"
+			],
+			[
+				"col",
+				"col-md-2"
+			],
+			[
+				"bac",
+				"background-color"
+			],
+			[
+				"margin",
+				"margin-top"
+			],
+			[
 				"st",
-				"strong	Tag"
+				"staff"
 			],
 			[
 				"h",
@@ -26,14 +46,6 @@
 			[
 				"paddin",
 				"padding-right"
-			],
-			[
-				"margin",
-				"margin-bottom"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"blue",
@@ -128,10 +140,6 @@
 				"padding"
 			],
 			[
-				"bac",
-				"background-size"
-			],
-			[
 				"no",
 				"nowrap"
 			],
@@ -172,10 +180,6 @@
 				"repeat-y"
 			],
 			[
-				"col",
-				"colBig"
-			],
-			[
 				"in",
 				"input	Tag"
 			],
@@ -186,10 +190,6 @@
 			[
 				"bor",
 				"border-top"
-			],
-			[
-				"text",
-				"text-align"
 			],
 			[
 				"ma",
@@ -219,7 +219,7 @@
 			"file": "municipio.php",
 			"settings":
 			{
-				"buffer_size": 126,
+				"buffer_size": 10121,
 				"line_ending": "Unix"
 			}
 		},
@@ -227,15 +227,41 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 8795,
+				"buffer_size": 11018,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "style.css",
+			"file": "archive-documentos.php",
 			"settings":
 			{
-				"buffer_size": 19471,
+				"buffer_size": 5944,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "Searching 85 files for \"get_field\"\n\n/Users/upmedia/GitHub/santodomingo/archive-documentos.php:\n    6  \n    7  <?php if($post->post_parent == '89'){?>\n    8: 	<?php $bgid = get_field('head_image' , $post->ID)?>\n    9  	<?php $bg = wp_get_attachment_image_src( $bgid, 'wider' ); ?>\n   10  <?php }else{?>\n   ..\n   94                          <div class=\"row\">\n   95                              <div class=\"col-md-1 col-esp\">\n   96:                                 <a href=\"<?php echo wp_get_attachment_url(get_field('documento',$doc->ID))?>\" class=\"ico-link clr-<?php echo $t[0]->slug?>\">\n   97:                                 	<span class=\"fa fa-lg <?php echo get_icon_for_attachment(get_field('documento',$doc->ID))?>\"></span>\n   98                                  </a> \n   99:                                 <?php //echo get_type_for_attachment(get_field('documento',$doc->ID))?>\n  100                              </div>\n  101                              <div class=\"col-md-11\">\n  102:                                 <h4><a href=\"<?php echo wp_get_attachment_url(get_field('documento',$doc->ID))?>\"><?php echo $doc->post_title?></a></h4>\n  103                                  <p><?php echo $doc->post_content?></p>\n  104                                  <footer class=\"row\">\n  105                                  <div class=\"col-md-9 dte\">Fecha de publicación: <?php echo get_the_date('l, j \\d\\e F \\d\\e Y' , $doc->ID)?></div>\n  106:                                 <div class=\"col-md-3\"><a href=\"<?php echo wp_get_attachment_url(get_field('documento',$doc->ID))?>\" class=\"morelink\"><span class=\"fa fa-circle\"></span> Leer más</a></div>\n  107                              </footer>\n  108                              </div>\n\n/Users/upmedia/GitHub/santodomingo/category.php:\n    4  <?php get_template_part('searchbar')?>\n    5  \n    6: 	<?php $bgid = get_field('imagen_encabezado' , 'category_'.$var->term_id)?>\n    7  	<?php $bg = wp_get_attachment_image_src( $bgid, 'wider' ); ?>\n    8  \n\n/Users/upmedia/GitHub/santodomingo/page-educacion.php:\n   17              <figure class=\"col-md-12 col-esp\">\n   18                \n   19:               <?php $teachs = get_field('titular_educacion')?>\n   20                \n   21                    <a href=\"<?php echo get_permalink($teachs->ID) ?>\"><?php echo get_the_post_thumbnail($teachs->ID , 'wider' , array('class' => 'img-responsive')); ?></a>\n\n/Users/upmedia/GitHub/santodomingo/page-salud.php:\n   16              <figure class=\"col-md-12 col-esp\">\n   17                \n   18:               <?php $saluds = get_field('titular_salud')?>\n   19                \n   20                    <a href=\"<?php echo get_permalink($saluds->ID) ?>\"><?php echo get_the_post_thumbnail($saluds->ID , 'wider' , array('class' => 'img-responsive')); ?></a>\n\n/Users/upmedia/GitHub/santodomingo/page.php:\n    5  \n    6  <?php if($post->post_parent == '89'){?>\n    7: 	<?php $bgid = get_field('head_image' , $post->ID)?>\n    8  	<?php $bg = wp_get_attachment_image_src( $bgid, 'wider' ); ?>\n    9  <?php }else{?>\n   ..\n   37  <div class=\"clear separator\"></div>\n   38  \n   39: <?php $boxes = get_field('boxes')?>\n   40  <?php if($boxes){?>\n   41  \n   ..\n  140                          <div class=\"row\">\n  141                              <div class=\"col-md-1 col-esp\">\n  142:                                 <a href=\"<?php echo wp_get_attachment_url(get_field('documento',$doc->ID))?>\" class=\"ico-link clr-<?php echo $post->post_name?>\">\n  143:                                 	<span class=\"fa fa-lg <?php echo get_icon_for_attachment(get_field('documento',$doc->ID))?>\"></span>\n  144                                  </a> \n  145:                                 <?php //echo get_type_for_attachment(get_field('documento',$doc->ID))?>\n  146                              </div>\n  147                              <div class=\"col-md-11\">\n  148:                                 <h4><a href=\"<?php echo wp_get_attachment_url(get_field('documento',$doc->ID))?>\"><?php echo $doc->post_title?></a></h4>\n  149                                  <p><?php echo $doc->post_content?></p>\n  150                                  <footer class=\"row\">\n  151                                  <div class=\"col-md-9 dte\">Fecha de publicación: <?php echo get_the_date('l, j \\d\\e F \\d\\e Y' , $doc->ID)?></div>\n  152:                                 <div class=\"col-md-3\"><a href=\"<?php echo wp_get_attachment_url(get_field('documento',$doc->ID))?>\" class=\"morelink\"><span class=\"fa fa-circle\"></span> Leer más</a></div>\n  153                              </footer>\n  154                              </div>\n\n16 matches across 5 files\n",
+			"settings":
+			{
+				"buffer_size": 4643,
+				"line_ending": "Unix",
+				"name": "Find Results",
+				"scratch": true
+			}
+		},
+		{
+			"file": "page-educacion.php",
+			"settings":
+			{
+				"buffer_size": 2373,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page.php",
+			"settings":
+			{
+				"buffer_size": 8364,
 				"line_ending": "Unix"
 			}
 		},
@@ -243,15 +269,31 @@
 			"file": "header.php",
 			"settings":
 			{
-				"buffer_size": 4281,
+				"buffer_size": 3450,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "/Volumes/santodomingo/cfix.css",
+			"file": "style.css",
 			"settings":
 			{
-				"buffer_size": 1237,
+				"buffer_size": 28307,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "functions.php",
+			"settings":
+			{
+				"buffer_size": 8034,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cfix.css",
+			"settings":
+			{
+				"buffer_size": 8373,
 				"line_ending": "Unix"
 			}
 		}
@@ -280,6 +322,8 @@
 	},
 	"file_history":
 	[
+		"/Users/upmedia/GitHub/santodomingo/header.php",
+		"/Volumes/santodomingo/cfix.css",
 		"/Users/upmedia/GitHub/santodomingo/municipio.php",
 		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_44.php",
 		"/Users/upmedia/Desktop/Sitio Alimentate Sano/index.php",
@@ -405,9 +449,7 @@
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/wp-config.php",
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/wp-config-sample.php",
 		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/functions.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/author.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/superfish.js",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/theme_trust.js"
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/author.php"
 	],
 	"find":
 	{
@@ -418,6 +460,8 @@
 		"height": 0.0,
 		"where_history":
 		[
+			"/Users/upmedia/GitHub/santodomingo",
+			"<wp-content>,/Users/upmedia/GitHub/ACTO_WP/wp-content/themes/mystile"
 		]
 	},
 	"find_state":
@@ -425,6 +469,11 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"h2",
+			"CONCEJO MUNICIPAL",
+			"#3599cb",
+			"3599cb",
+			"get_field",
 			"recetas",
 			"navidena",
 			"mCustomScrollBox mCS-light",
@@ -547,12 +596,7 @@
 			"ventajaVertical",
 			".boxSoftware",
 			"        <?",
-			".ventajaBox",
-			"h4",
-			"ventajaUNo",
-			"ventajaBox",
-			"shadow",
-			"lineRi"
+			".ventajaBox"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -570,7 +614,7 @@
 	"groups":
 	[
 		{
-			"selected": 4,
+			"selected": 0,
 			"sheets":
 			[
 				{
@@ -578,44 +622,15 @@
 					"file": "municipio.php",
 					"settings":
 					{
-						"buffer_size": 126,
+						"buffer_size": 10121,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								103,
-								103
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 1,
-					"file": "index.php",
-					"settings":
-					{
-						"buffer_size": 8795,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								386,
-								386
+								9934,
+								9934
 							]
 						],
 						"settings":
@@ -629,25 +644,25 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 3336.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 2,
-					"file": "style.css",
+					"buffer": 1,
+					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 19471,
+						"buffer_size": 11018,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18776,
-								18494
+								6164,
+								8065
 							]
 						],
 						"settings":
@@ -655,23 +670,191 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"tab_size": 4,
 							"translate_tabs_to_spaces": true,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 7471.0,
+						"translation.y": 1983.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "archive-documentos.php",
+					"settings":
+					{
+						"buffer_size": 5944,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								3440,
+								3440
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 1247.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "header.php",
 					"settings":
 					{
-						"buffer_size": 4281,
+						"buffer_size": 4643,
+						"regions":
+						{
+							"match":
+							{
+								"flags": 112,
+								"regions":
+								[
+									[
+										172,
+										181
+									],
+									[
+										504,
+										513
+									],
+									[
+										684,
+										693
+									],
+									[
+										849,
+										858
+									],
+									[
+										1070,
+										1079
+									],
+									[
+										1538,
+										1547
+									],
+									[
+										1858,
+										1867
+									],
+									[
+										2166,
+										2175
+									],
+									[
+										2564,
+										2573
+									],
+									[
+										2916,
+										2925
+									],
+									[
+										3125,
+										3134
+									],
+									[
+										3383,
+										3392
+									],
+									[
+										3568,
+										3577
+									],
+									[
+										3733,
+										3742
+									],
+									[
+										3954,
+										3963
+									],
+									[
+										4422,
+										4431
+									]
+								],
+								"scope": ""
+							}
+						},
+						"selection":
+						[
+							[
+								2040,
+								2040
+							]
+						],
+						"settings":
+						{
+							"detect_indentation": false,
+							"incomplete_sync": null,
+							"output_tag": 1,
+							"remote_loading": false,
+							"result_base_dir": "",
+							"result_file_regex": "^([A-Za-z\\\\/<].*):$",
+							"result_line_regex": "^ +([0-9]+):",
+							"scroll_past_end": true,
+							"synced": false,
+							"syntax": "Packages/Default/Find Results.hidden-tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 98.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "page-educacion.php",
+					"settings":
+					{
+						"buffer_size": 2373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								231,
+								856
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "page.php",
+					"settings":
+					{
+						"buffer_size": 8364,
 						"regions":
 						{
 						},
@@ -687,37 +870,141 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 117.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
-					"file": "/Volumes/santodomingo/cfix.css",
+					"buffer": 6,
+					"file": "header.php",
 					"settings":
 					{
-						"buffer_size": 1237,
+						"buffer_size": 3450,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								622,
-								622
+								1637,
+								1637
 							]
 						],
 						"settings":
 						{
 							"incomplete_sync": null,
-							"syntax": "Packages/CSS/CSS.tmLanguage"
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 742.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 2,
+			"sheets":
+			[
+				{
+					"buffer": 7,
+					"file": "style.css",
+					"settings":
+					{
+						"buffer_size": 28307,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								28235,
+								28237
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 11527.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "functions.php",
+					"settings":
+					{
+						"buffer_size": 8034,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								0,
+								0
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 416.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 9,
+					"file": "cfix.css",
+					"settings":
+					{
+						"buffer_size": 8373,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								6492,
+								6498
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2271.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -742,11 +1029,18 @@
 				0,
 				1,
 				1
+			],
+			[
+				1,
+				0,
+				2,
+				1
 			]
 		],
 		"cols":
 		[
 			0.0,
+			0.619489059286,
 			1.0
 		],
 		"rows":
@@ -785,6 +1079,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 196.0,
+	"side_bar_width": 107.0,
 	"status_bar_visible": true
 }

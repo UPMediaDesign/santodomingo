@@ -35,6 +35,7 @@ presupuesto:	#4e5b91s
 .clr-15	{ background-color:#008e82}
 .clr-16	{ background-color:#77ddd7}
 .clr-17	{ background-color:#4e5b91}
+.clr-18 { background-color:#3599cb}
 
 /*******************************************************************************************/
 /*************************************Style Carlos************************************************/
@@ -104,9 +105,8 @@ figcaption.teach p{font-family: 'Pluto'; font-size: 25px; font-weight: 900; colo
 .nav-tabs>li.col-md-4 a:hover{border: 2px solid #003252; background: #f2f2f2 !important;}
 .nav-tabs>li.col-md-4{float:left;  padding: 2px}
 .nav-tabs>li.col-md-4.last{margin-right:0;}
-.nav-tabs>li.active.col-md-4 a{background:#003252 !important; color:#fff !important; font-size:17px; font-family: 'Pluto'; text-align: center; border-radius: 5px; cursor:pointer;}
-.nav-tabs>li.col-md-4 a{background: #fff !important; color: #003252 !important; font-size: 17px; font-family: 'Pluto'; text-align: center; padding: 20px 0px 0; line-height: 100%; height: 59px; width: 100%; border: 2px solid #003252;
-border-radius: 5px;}
+.nav-tabs>li.active.col-md-4 a{background:#003252 !important; color:#fff !important; font-size:17px; font-family: 'Pluto'; text-align: center; border-radius: 5px; cursor:pointer; text-transform: uppercase;}
+.nav-tabs>li.col-md-4 a{background: #fff !important; color: #003252 !important; font-size: 17px; font-family: 'Pluto'; text-align: center; padding: 20px 0px 0; line-height: 100%; height: 59px; width: 100%; border: 2px solid #003252; border-radius: 5px; text-transform: uppercase;}
 .teachtab[role="tabpanel"] h3{text-align: left; font-size:26px; }
 .teachtab[role="tabpanel"] p{}
 
@@ -128,6 +128,25 @@ section#slider .clr-2.skk.desktop:after{background-color:#1970a1}
 .council img{display:block; text-align:center; text-align:center; margin: 0 auto;}
 .majorlist h3{}
 .civilcouncil h2{margin-top: 0; font-family: 'Pluto'; font-weight: 900; color: #155980; font-size: 26px;}
+.civilcouncil p{font-family: "Times New Roman", Times, serif;font-style: normal; text-align: left; font-size: 16px; }
+/* Pestañas de Contenido */
+li.col-md-4.contab a{background: #fff !important; color: #003252 !important; font-size: 17px; font-family: 'Pluto'; text-align: center; padding: 20px 20px 0; line-height: 100%; height: 59px; width: 100%; border: 2px solid #003252; border-radius: 5px;}
+
+.func-council ul li{font-family: Georgia, "Times New Roman", Times, serif; font-size: 14px; text-align: left; font-style: italic; line-height: 180%; list-style: none; margin-bottom: 24px;}
+.func-council ul li strong{background: #1970a1; border-radius: 50%; padding: 10px 19px; font-size: 16px; font-weight: 900; font-family: 'Pluto'; color: #fff; font-style: normal !important; text-align: center; float: left; display: block; margin-right: 15px;}
+
+.coninteger p{text-align:left; font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; line-height: 140%;}
+
+.question p{text-align: left; font-family: "Times New Roman", Times, serif; font-size:14px; line-height: 140%;}
+
+/* Galeria Alcaldes */
+.megacontainer.clr-18{display:inline-block;}
+.col-md-2.major{padding: 0 5px;}
+.col-md-12.major h2{color:#fff; font-weight:bold; font-size: 26px;}
+.col-md-2.major img{width: 100%; height: auto;}
+.major figcaption{background: #f5ba05; clear: both; height: 115px; /*width: 100%;*/ padding: 0;}
+.major h3{color: #fff; font-size: 15px; text-align: left; padding: 10px 10px 0; margin-top: 0; height:70px;}
+.major p{text-align: left; color:#fff; font-size: 13px; padding:5px 10px; font-family: "Times New Roman", Times, serif; height:30px;}
 
 /* Estilos Responsive */
 @media screen and (min-width: 1024px){}
