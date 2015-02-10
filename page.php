@@ -198,4 +198,9 @@
 <div class="clear separator"></div>
 <?php }?>
 
+<div class="clear separator"></div>
+
+<!-- Fin Slider Test -->
+
+
 <?php get_footer();?>

@@ -307,7 +307,7 @@ presupuesto:	#4e5b91s
 /*************************************Bxslider************************************************/
 /*******************************************************************************************/
 
-section#slider{ height:500px;  margin-top:175px; background-color:#1970a1;}
+section#slider{ /*height:500px;*/  margin-top:175px; background-color:#1970a1;}
 .home section#slider{margin-top:115px; height:445px; }
 .parent-pageid-89 section#slider , .single section#slider , .category section#slider { height:300px;  margin-top:175px; background-color:#1970a1;}
 .post-type-archive-documentos section#slider{ height:345px;  margin-top:175px; background-color:#1970a1;}
@@ -326,7 +326,7 @@ section#slider p ,  section#slider .cat{ font-family:Georgia, "Times New Roman",
 section#slider a.morelink{font-family: 'Pluto' , helvetica, arial, sans-serif; color:#fff; float:right; font-weight:900; font-size:16px;}
 
 section#slider {
-background-size: 100% auto;
+background-size: cover;
 background-position: center bottom;
 }
 
