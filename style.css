@@ -225,6 +225,10 @@ presupuesto:	#4e5b91s
 .clr-16 , .clr-prodesal					{ background-color:#77ddd7}
 .clr-17 , .clr-presupuesto-y-cuenta-publica	{ background-color:#4e5b91}
 
+
+/* Iconos del clima */
+
+
 /*******************************************************************************************/
 /*************************************HEADER************************************************/
 /*******************************************************************************************/
@@ -402,7 +406,7 @@ section#subscribe{ background-color:#f2f2f2; padding:30px;}
 
 section#servicios figure{ background-color:#efefef; }
 /*section#servicios figure figcaption::before{ width:80px; content:''; background-color: #f30; display:block; float:left}*/
-section#servicios figure figcaption h3{ font-size:14px; color:#3d3d3d; margin:0px; padding: 10px 0}
+section#servicios figure figcaption h3{ font-size:14px; color:#3d3d3d; margin:0px; padding: 10px 0 5px}
 section#servicios figure figcaption p{ margin-bottom:0 ; font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; font-style:italic}
 
 section#servicios_page{ text-align:center}

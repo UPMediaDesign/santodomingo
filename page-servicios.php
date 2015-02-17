@@ -34,13 +34,14 @@ Template Name: Servicios
 <section class="container">
 			<div class="row">
 				<div class="col-md-8 col-md-offset-2">
-	                <?php $servicios = get_posts(array('post_type' => 'page' , 'post_parent' => 89  , 'numberposts' => -1 , 'exclude' => 105 ))?>
+	                <?php $servicios = get_posts(array('post_type' => 'page' , 'post_parent' => 89  , 'numberposts' => -1 ))?>
 	            
 	                <?php foreach($servicios as $servicio):?>
-	                	<div class="col-md-3">
+	                	<div class="col-md-4">
 	                        <a href="<?php echo get_permalink($servicio->ID)?>">
-	                            <img src="<?php echo get_bloginfo('template_directory')?>/images/<?php echo $servicio->post_name?>.png" width="100" class="desktop clr-<?php echo $servicio->post_name?>" alt="" />
+	                            <img src="<?php echo get_bloginfo('template_directory')?>/images/<?php echo $servicio->post_name?>.png" width="100" class="desktop service clr-<?php echo $servicio->post_name?>" alt="" />
 	                        </a>
+	                        <h3 class="service"><?php echo $servicio->post_title?></h3>
 	                    </div>        
 	                <?php endforeach?>
 	                

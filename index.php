@@ -208,6 +208,14 @@
                         </div>
                         
                     </div>
+                    
+                    <div class="col-md-12">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#servicios-1" aria-controls="servicios-1" role="tab" data-toggle="tab"><span class="fa fa-circle fa-fw"></span></a></li>
+                                <li role="presentation"><a href="#servicios-2" aria-controls="servicios-2" role="tab" data-toggle="tab"><span class="fa fa-circle fa-fw"></span></a></li>
+                            </ul>
+                    </div>
+
                 </div>
             
             </aside>

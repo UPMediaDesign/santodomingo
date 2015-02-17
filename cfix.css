@@ -154,6 +154,35 @@ ol.carousel-indicators.page{position: absolute; top: 125px; right: 40px; z-index
 .carousel-indicators.page li {background: #fff; border: 6px solid #a5a5a5; width: 25px; height: 25px; border-radius: 50%; margin:0px;}
 .item div.col-md-3.col-xs-3{padding: 0 5px;}
 
+
+/* Seguridad Ciudadana */
+h3.service{text-align: center; border-bottom: 1px solid #a5a5a5; font-size: 20px; height: 45px; margin-bottom: 35px; }
+/* Área Iconica de Servicios */
+.service .clr-15, .clr-dideco{background-color: #008e82; width: 100%; max-width: 75%; border-radius: 50%; border: 5px solid #0E6E66; padding: 8%; display: block; margin: 0 auto;}
+.service .clr-9, .clr-seguridad-ciudadana{background-color: #003d6f; width: 100%; max-width: 75%; border-radius: 50%; border: 5px solid #006DC7; padding: 8%; display: block; margin: 0 auto;}
+.service .clr-11, .clr-aseo-y-ornato {background-color: #bd355b; width: 100%; max-width: 75%; border-radius: 50%; border:5px solid #AB0030; padding: 8%; display: block; margin: 0 auto; }
+.service .clr-14, .clr-medio-ambiente {background-color: #56a32a;width: 100%; max-width: 75%; border-radius: 50%; border: 5px solid #318600; padding: 8%; display: block; margin: 0 auto; }
+.sservice .clr-13, .clr-direccion-de-obras {background-color: #ff801a; width: 100%; max-width: 75%; border-radius: 50%; border:5px solid #E46D0D; padding: 8%; display: block; margin: 0 auto;}
+.service.clr-12, .clr-rentas-y-patentes {background-color: #4e5b91; width: 100%; max-width: 75%; border-radius: 50%;border: 5px solid #687FE0; padding: 8%; display: block; margin: 0 auto; }
+.service .clr-10, .clr-departamento-de-transito {background-color: #ffc800; width: 100%; max-width: 75%; border-radius: 50%; border: 5px solid #E8B704; padding: 8%; display: block; margin: 0 auto; }
+.service .clr-16, .clr-prodesal {background-color: #77ddd7; width: 100%; max-width: 75%; border-radius: 50%; border: 5px solid #65BBB6; padding: 8%; display: block; margin: 0 auto; }
+.service .clr-17, .clr-presupuesto-y-cuenta-publica {background-color: #4e5b91; width: 100%; max-width: 75%; border-radius: 50%; border: 5px solid #006DC7; padding: 8%; display: block; margin: 0 auto; }
+
+/* ACOTACIONES A ESTILOS EN style.css y bootstrap.min.css */
+/* Interiores de Servicios */
+.panel-group .panel-heading {border-bottom: 0; border-radius: 5px; padding: 15px; margin: 0; max-width: 100%; border: 0; }
+
+/* Inicio */
+img.alignleft.desktop.clr-aseo-y-ornato {background-color: #bd355b; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}
+img.alignleft.desktop.clr-dideco{background-color: #008e82; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}
+img.alignleft.desktop.clr-medio-ambiente {background-color: #56a32a; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}
+img.alignleft.desktop.clr-direccion-de-obras {background-color:#ff801a; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}
+img.alignleft.desktop.clr-rentas-y-patentes {background-color: #4e5b91; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}
+img.alignleft.desktop.clr-departamento-de-transito {background-color: #ffc800; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}
+img.alignleft.desktop.clr-prodesal{background-color: #77ddd7; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}
+img.alignleft.desktop.clr-presupuesto-y-cuenta-publica {background-color: #4e5b91; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}
+img.alignleft.desktop.clr-seguridad-ciudadana{background-color: #003d6f; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}
+
 /* Estilos Responsive */
 @media screen and (min-width: 1024px){}
 @media (max-width:1023px) and (min-width: 935px){}
