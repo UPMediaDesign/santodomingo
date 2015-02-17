@@ -54,13 +54,11 @@ google.maps.event.addDomListener(window, 'load', initialize);
 
 <div style="height:200px"></div>
 
-<div class="clear separator"></div>
-
 <section id="btnz">
 	<div class="megacontainer">
 		<div class="row">
 			<div class="col-md-2 col-md-offset-8">
-            	<button type="button" class="btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-expanded="false">
+            	<button type="button" class="clr-11 btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-expanded="false">
                   Ver lugares por tipo
                   <span class="caret"></span>
                 </button>
@@ -69,13 +67,12 @@ google.maps.event.addDomListener(window, 'load', initialize);
                   <li><a href="#">Dropdown link</a></li>
                 </ul>
             </div>
-			<div class="col-md-2">
-            	<a href="" class="btn btn-success btn-block">Ver lugares en mapa</a>
+			<div class="col-md-2 ">
+            	<a href="" class="clr-3 btn btn-success btn-block">Ver lugares en mapa</a>
             </div>
 		</div>
 	</div>
 </section>
-<div class="clear separator"></div>
 
 <main id="turismo">
 	<div class="megacontainer">

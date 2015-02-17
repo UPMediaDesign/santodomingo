@@ -413,7 +413,7 @@ section#servicios_page{ text-align:center}
 section#servicios_page ul{ text-align:center; margin: 0px !important; padding:0px !important}
 section#servicios_page ul li{ list-style:none; display:inline-block; width:12%;}
 section#servicios_page ul li a { border-radius: 100px;display: block;overflow: hidden;border: 2px solid #155980;margin: 2px;}
-section#servicios_page ul li img { width: 100%;height: auto;padding: 4px;border: 2px #fff solid;border-radius: 100px;}
+section#servicios_page ul li img { width: 100%;height: auto;padding: 4px;border: 2px #fff solid;border-radius: 100px; margin:8px auto;}
 
 aside#turismo { background-color: #f2f2f2;}
 aside#turismo figure figcaption{ background-color:#56a32a; padding:0 0 0 10px; color:#fff; }
@@ -427,7 +427,7 @@ section#map #map_canvas{ height:500px;}
 
 section#documentos{}
 section#documentos h3 , section#documentos h5{ margin:0px; padding:0px}
-section#documentos .ico-link {padding: 20px; border-radius: 60px;margin-left: 5px;margin-top: 0px;display: block;color: #fff;}
+section#documentos .ico-link {padding: 20px; border-radius: 60px; margin-left: 5px; margin-top: 0px; display: block; color: #fff; border: none; max-width: 88%;}
 
 .post-type-archive-turismo figure figcaption h3{ font-size:14px; color:#3d3d3d; margin:0px; padding: 10px 0; text-align: left}
 .post-type-archive-turismo figure figcaption{ background-color:#56a32a; padding:0 0 0 10px; color:#fff; position:absolute; bottom: 0px; width:100% }
@@ -467,9 +467,10 @@ color:#f79700 !important;
 }
 
 .wp-paginate {text-align: right;}
-.wp-paginate li a , .wp-paginate li .current {border-radius: 60px;padding: 8px 0;font-size: 12px;line-height: 100%;height: 30px;width: 30px;display: inline-block;text-align: center;}
+.wp-paginate li a , .wp-paginate li .current {border-radius: 60px; padding: 9px; font-size: 12px; line-height: 100%; height: 30px; width: 30px; display: inline-block; text-align: center; background: #fff; font-family: 'Pluto'; border: 1px solid #155980; color:#155980;}
 
-.wp-paginate li .current{ background-color:#e21717; border: none}
+.wp-paginate li .current{ background: #155980 !important; border: none; padding: 10px 0; font-family: 'Pluto' !important; color:#fff !important; }
+.wp-paginate a:hover, .wp-paginate a:active{background:#1970a1 !important; color:#fff !important;}
 
 .thumbnail {border: 1px solid #fff ;padding: 0px; margin: 0px;}
 .thumbnail img { display:block;}
@@ -495,10 +496,10 @@ color:#f79700 !important;
 
 article { color:#525252}
 article h4{ font-weight:700}
-.category article h4{ font-weight:700; text-align:left; color:#525252}
+.category article h4{ font-weight:700; text-align:left; color:#525252; line-height:140%; padding-top: 10px;}
 article p{font-family:Georgia, "Times New Roman", Times, serif; font-style:italic}
 article footer {font-family: 'Pluto' , helvetica, arial, sans-serif; font-weight:300; font-stretch:condensed; padding: 0}
-article footer .dte{ color:#525252}
+article footer .dte{ color:#525252; font-size:13px;}
 article footer .morelink { color:#ce313f; float:right; font-weight:700}
 
 
@@ -518,8 +519,17 @@ line-height: 100%;
 
 .sslc .btn{ border-radius:100px; padding:28px;}
 
-.asidemenu li{ text-align:left;}
-.asidemenu li a{ color:#fff;}
+.asidemenu li{ text-align:left; background: #bd355b; color:#fff; font-family: 'Pluto'; font-weight:500; font-size: 18px; padding:10px 5px; -webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+.asidemenu li:hover{background:#AB0030; -webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+.asidemenu li a{ color:#fff; text-decoration:none;}
 
 /*******************************************************************************************/
 /*************************************TIMELINR**********************************************/

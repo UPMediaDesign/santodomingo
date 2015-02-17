@@ -190,9 +190,11 @@
                 	
                     <div role="tabpanel">
                         <div class="tab-content">
-                        
+
                         	<?php $turismo = get_posts(array('post_type' => 'turismo' , 'numberposts' => 2 , 'tipo' => 'lugar-turistico'))?>
+                            <?php $count = 0 ?>
                             <?php foreach($turismo as $place):?>
+                            <?php $count++ ?>
                                 <figure class="col-md-12">
                                     <a href="<?php echo get_permalink($place->ID)?>"><?php echo get_the_post_thumbnail($place->ID , 'col-6' , array('class' =>'img-responsive'))?></a>
                                     <figcaption>
@@ -203,7 +205,7 @@
                                     </figcaption>
                                 </figure>
                                 <div class="clear separator"></div>
-                            <?php endforeach;?>
+                            <?php endforeach?>
                                 
                         </div>
                         
@@ -211,8 +213,8 @@
                     
                     <div class="col-md-12">
                             <ul class="nav nav-tabs" role="tablist">
-                                <li role="presentation" class="active"><a href="#servicios-1" aria-controls="servicios-1" role="tab" data-toggle="tab"><span class="fa fa-circle fa-fw"></span></a></li>
-                                <li role="presentation"><a href="#servicios-2" aria-controls="servicios-2" role="tab" data-toggle="tab"><span class="fa fa-circle fa-fw"></span></a></li>
+                                <li role="presentation" class="active"><a href="#turismo-1" aria-controls="turismo-1" role="tab" data-toggle="tab"><span class="fa fa-circle fa-fw"></span></a></li>
+                                <li role="presentation"><a href="#turismo-2" aria-controls="turismo-2" role="tab" data-toggle="tab"><span class="fa fa-circle fa-fw"></span></a></li>
                             </ul>
                     </div>
 

@@ -86,8 +86,8 @@
                             <?php $acoc = 0?>
 							<?php foreach($box['acordeon'] as $acordeon):?>
                             <?php $acoc++?>
-                            	<div class="panel panel-default">
-                                	<div class="panel-heading clr-<?php echo $post->post_name?>" role="tab" id="aco-<?php echo $acoc?>">
+                            	<div class="panel panel-default" id="control">
+                                	<div class="panel-heading clr-<?php echo $post->post_name?>" style="{width: 100%; max-width: none; border-radius: 0; padding: 11px; border: 1px solid #ddd;}" role="tab" id="aco-<?php echo $acoc?>">
                                       <h4 class="panel-title">
                                         <a data-toggle="collapse" data-parent="#accordion" href="#collapse-<?php echo $acoc?>" aria-expanded="true" aria-controls="collapse-<?php echo $acoc?>">
                                           <?php echo $acordeon['titulo_acordeon']?>

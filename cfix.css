@@ -168,6 +168,79 @@ h3.service{text-align: center; border-bottom: 1px solid #a5a5a5; font-size: 20px
 .service .clr-16, .clr-prodesal {background-color: #77ddd7; width: 100%; max-width: 75%; border-radius: 50%; border: 5px solid #65BBB6; padding: 8%; display: block; margin: 0 auto; }
 .service .clr-17, .clr-presupuesto-y-cuenta-publica {background-color: #4e5b91; width: 100%; max-width: 75%; border-radius: 50%; border: 5px solid #006DC7; padding: 8%; display: block; margin: 0 auto; }
 
+/* Area Servicios Contenido */
+.panel-default>.panel-heading.clr-presupuesto-y-cuenta-publica {width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #4e5b91; border:none;}
+.panel-default>.panel-heading.clr-departamento-de-transito{width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #ffc800; border:none;}
+.panel-default>.panel-heading.clr-rentas-y-patentes {width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #ffc800; border:none;}
+.panel-default>.panel-heading.clr-direccion-de-obras{width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #ff801a; border:none;}
+.panel-default>.panel-heading.clr-medio-ambiente{width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #56a32a; border:none;}
+.panel-default>.panel-heading.clr-aseo-y-ornato {width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #bd355b; border:none;}
+.panel-default>.panel-heading.clr-seguridad-ciudadana {width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #003d6f; border:none;}
+.panel-default>.panel-heading.clr-dideco {width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #008e82; border:none;}
+
+button.btn.btn-primary.dropdown-toggle.btn-block{font-family: 'Pluto'; font-size: 15px; font-weight: 500; padding: 12px 0;}
+
+h4.panel-title a{font-family:'Pluto'; text-transform: uppercase; font-size:16px;}
+/* Portada Inicio */
+span.wpcf7-form-control-wrap.Nombre input[type="text"],
+span.wpcf7-form-control-wrap.Email input[type="email"]{display: block; width: 100%; height: 34px; padding: 20px 15px; font-size: 14px; line-height: 1.42857143; color: #555; background-color: #f2f2f4; background-image: none; border: 3px solid #003252; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 1px rgba(0,0,0,.075); -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s; -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; font-family: 'Pluto'; font-weight: 900; text-transform: uppercase;}
+input.btn-success{color: #fff; background: #1183c4; border-color:transparent; border-radius: 5px; font-family: pluto; text-transform: uppercase; padding: 12px; -webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}}
+
+input.btn-success:hover{background: #155980 !important; border-color:transparent;-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;} }
+
+/* Noticias */
+.asidemenu li a {background: #bd355b; color:#fff; font-family: 'Pluto'; font-weight:600; font-size: 16px; padding:10px 5px;}
+li a span.pull-right> span.fa.fa-chevron-circle-right{-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+li a span.pull-right> span.fa.fa-chevron-circle-right:hover{-webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -o-transform: rotate(90deg); writing-mode: tb-rl; -webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+
+.col-md-6.typo a h4{padding-top:10px; padding-bottom: 5px;}
+.col-md-6.typo p{padding-bottom:0px;}
+
+/* Paginador Noticias */
+.wp-paginate .title{display:none;}
+.wp-paginate {padding: 0; margin: 0 auto; display: block; text-align: center; }
+
+/* Turismo */
+.clr-11.btn.btn-default{font-family:'Pluto'; color:#fff; padding:15px;-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+.clr-11.btn.btn-default:hover{background:#AB0030; padding:15px;-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+a.clr-3.btn.btn-success.btn-block{font-family:'Pluto'; color:#fff; border:none; padding:15px;-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+a.clr-3.btn.btn-success.btn-block:hover{background:#1970a1; border:none; padding:15px;-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+
+
+/* -------- */
+
 /* ACOTACIONES A ESTILOS EN style.css y bootstrap.min.css */
 /* Interiores de Servicios */
 .panel-group .panel-heading {border-bottom: 0; border-radius: 5px; padding: 15px; margin: 0; max-width: 100%; border: 0; }
