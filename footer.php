@@ -21,7 +21,7 @@
 <section id="copy" class="clr-1">
 	<div class="container">
 		<div class="row">
-        	<div class="col-xs-6 col-md-offset-3"><img src="<?php bloginfo('template_directory')?>/images/bottom.png" class="img-responsive" alt="" /></div>
+        	<div class="col-md-6 col-md-offset-3"><img src="<?php bloginfo('template_directory')?>/images/bottom.png" class="img-responsive" alt="" /></div>
         </div>
 	</div>
 </section>

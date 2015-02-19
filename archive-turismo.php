@@ -9,7 +9,7 @@ var pins = [
   	<?php endforeach;?>
 ];
 function setMarkers(map, locations) {
-  //map.setCenter(new google.maps.LatLng(0, 0));
+  //map.setCenter(new google.maps.LatLng(-33.634987, -71.630344));
 
   var image = {
     url: 'https://google-developers.appspot.com/maps/documentation/javascript/examples/full/images/beachflag.png',
@@ -20,21 +20,29 @@ function setMarkers(map, locations) {
     // The anchor for this image is the base of the flagpole at 0,32.
     anchor: new google.maps.Point(0, 32)
   };
+  var marker = new google.maps.Marker({
+      position: myLatlng,
+      map: map,
+      title: 'Hello World!'
+  });
   var shape = {
       coords: [1, 1, 1, 20, 18, 20, 18 , 1],
       type: 'poly'
   };
+
   for (var i = 0; i < locations.length; i++) {
     var pin = locations[i];
     var myLatLng = new google.maps.LatLng(pin[1], pin[2]);
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        //icon: image,
-        //shape: shape,
+        icon: image,
+        shape: shape,
         title: pin[0],
         zIndex: pin[5]
     });
+
+    
 	
 	var content = '<img src="<?php bloginfo('template_directory')?>/images/logo.png" height="50" alt="" /><h4>'+pin[0]+'</h4><h5>'+pin[3]+'</h5><p>'+pin[4]+'</p>';
 	var infowindow = new google.maps.InfoWindow( {maxWidth: 320} )
@@ -57,13 +65,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <section id="btnz">
 	<div class="megacontainer">
 		<div class="row">
-			<div class="col-md-2 col-md-offset-8">
+			<div class="col-md-3 col-md-offset-7">
             	<button type="button" class="clr-11 btn btn-default dropdown-toggle btn-block" data-toggle="dropdown" aria-expanded="false">
                   Ver lugares por tipo
-                  <span class="caret"></span>
+                  <span class="fa fa-caret-down"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Dropdown link</a></li>
+                  <li><a href="#">Texto extendido desde un Lorem Ipsum</a></li>
                   <li><a href="#">Dropdown link</a></li>
                 </ul>
             </div>
@@ -77,7 +85,6 @@ google.maps.event.addDomListener(window, 'load', initialize);
 <main id="turismo">
 	<div class="megacontainer">
 		<div class="row">
-        	
             <?php $pcount = 0?>
             <?php foreach($posts as $post):?>
             <?php $pcount++?>
@@ -107,14 +114,20 @@ google.maps.event.addDomListener(window, 'load', initialize);
             </figure>
             
             <?php endforeach?>
-            
-            
 
-        </div>
+    </div>
+
+    <!-- Paginador -->
+    <div class="clear separator"></div>
+          <div class="navigation">
+                  <?php 
+                  if(function_exists('wp_paginate')) {
+                        wp_paginate();
+                    }
+          ?>
+    </div>
 	</div>
 </main>
-
-<div class="clear separator"></div>
 
 <section id="map">
 	<div id="map_canvas"></div>

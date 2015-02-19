@@ -46,12 +46,23 @@
 	<div class="container">
 		<div class="row">
         	<div class="col-md-6 col-xs-6">
-            	<div class="col-md-8 desktop"></div>
-            	<div class="col-md-4 col-xs-12"><h2>Fono ayuda</h2></div>
+            	<div class="col-md-7 desktop phone">
+                    <h3>800 444 2700</h3>
+                </div>
+            	<div class="col-md-5 col-xs-12 phone">
+                    <h2>Fono ayuda</h2>
+                    <span>Claritas est etiam processus.</span>
+                </div>
             </div>
         	<div class="col-md-6 col-xs-6">
-            	<div class="col-xs-4 col-xs-12"><h2>Transparencia</h2></div>
-                <div class="col-xs-8 desktop"></div>
+            	<div class="col-md-4 col-xs-12 trans">
+                    <img src="<?php bloginfo('template_directory')?>/images/trans-eye.png" alt="">
+                    <h2>Transparencia</h2>
+                </div>
+                <div class="col-xs-8 desktop ">
+                    <a class="transtag" href=""><img style="max-width: 145px !important; width:100% !important; margin-top: 40px;" src="<?php bloginfo('template_directory')?>/images/leytransparencia.png" alt=""></a>
+                    <a class="transtag" href=""><img style="max-width: 145px !important; width:100% !important; margin-top: 40px;" src="<?php bloginfo('template_directory')?>/images/transparencia-activa.png" alt=""></a>
+                </div>
             </div>
         </div>
 	</div>
@@ -79,7 +90,7 @@
                                 <h4><?php echo $post->post_title?></h4>
                                 <p><?php echo get_the_excerpt($post->ID)?></p>
                                 <footer class="row">
-                                    <div class="col-md-8">Fecha de publicación: 30 de abril 2014</div>
+                                    <div class="col-md-8 col-xs-8 publish"><p>Fecha de Publicación:<?php echo get_the_date(); ?></p></div>
                                     <div class="col-md-4"><a href="<?php echo get_permalink($post->ID)?>" class="morelink"><span class="fa fa-circle"></span> Leer más</a></div>
                                 </footer>
                             </div>
@@ -94,7 +105,7 @@
                                 <h4><?php echo get_the_title($post->ID)?></h4>
                                 <p><?php echo get_the_excerpt($post->ID)?></p>
                                 <footer class="row">
-                                    <div class="col-md-9">Fecha de publicación: 30 de abril 2014</div>
+                                    <div class="col-md-9 publish"><p>Fecha de Publicación:<?php echo get_the_date(); ?></p></div>
                                     <div class="col-md-3"><a href="<?php echo get_permalink($post->ID)?>" class="morelink"><span class="fa fa-circle"></span> Leer más</a></div>
                                 </footer>
                             </div>
@@ -230,7 +241,7 @@
 <section id="subscribe">
 	<div class="container">
 		<div class="row">
-        	<div class="col-md-12">
+        	<div class="col-md-12 form">
             	<h3>Suscríbete al Newsletter</h3>
                 <p class="subtitle">Formas humanitatis per seacula quarta decima et quinta.</p>
                 <div class="row"><?php echo do_shortcode('[contact-form-7 id="10" title="Suscripción Newsletter"]')?></div>

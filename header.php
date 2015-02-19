@@ -77,6 +77,7 @@ jQuery(document).ready(function($) {
 	google.maps.event.addListener(map, 'click', function(event){
 		map.setOptions({draggable: true});
 	});
+	var p = data.results[0].geometry.location
 	
 	setMarkers(map, pins);
   }

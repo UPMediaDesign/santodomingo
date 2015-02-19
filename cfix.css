@@ -227,19 +227,29 @@ transition: all 0.5s ease-in-out;}
 -ms-transition: all 0.5s ease-in-out;
 -o-transition: all 0.5s ease-in-out;
 transition: all 0.5s ease-in-out;}
-a.clr-3.btn.btn-success.btn-block{font-family:'Pluto'; color:#fff; border:none; padding:15px;-webkit-transition: all 0.5s ease-in-out;
+a.clr-3.btn.btn-success.btn-block{font-family:'Pluto'; color:#fff; border:none; padding:17px;-webkit-transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
 -ms-transition: all 0.5s ease-in-out;
 -o-transition: all 0.5s ease-in-out;
 transition: all 0.5s ease-in-out;}
-a.clr-3.btn.btn-success.btn-block:hover{background:#1970a1; border:none; padding:15px;-webkit-transition: all 0.5s ease-in-out;
+a.clr-3.btn.btn-success.btn-block:hover{background:#1970a1; border:none; padding:17px;-webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+a.clr-3.btn.btn-success.btn-block:focus{background:#155980; border:none; padding:17px;-webkit-transition: all 0.5s ease-in-out;
 -moz-transition: all 0.5s ease-in-out;
 -ms-transition: all 0.5s ease-in-out;
 -o-transition: all 0.5s ease-in-out;
 transition: all 0.5s ease-in-out;}
 
+span.fa.fa-caret-down{border: 2px solid #fff; padding: 2px 5px; border-radius: 15px;}
+.link a{background: #fff; padding: 5px 10px; -webkit-border-top-left-radius: 50px; -moz-border-radius-topleft: 50px; border-top-left-radius: 50px; float: right; text-align: left; color: #155980; font-size: 25px; height: 30px; width: 30px}
 
-/* -------- */
+/* Acotacion en los diferentes tipos de columnas */
+.col-md-6.col-esp >figcaption> div.link a{position: absolute; left: 95%; bottom: 0;}
+.col-md-4.col-sm-6.col-esp >figcaption> div.link a{position: absolute; left: 93%; bottom: 0;}
+.col-md-2.col-sm-6.col-esp >figcaption> div.link a{position: absolute; left: 85%; bottom: 0;}
 
 /* ACOTACIONES A ESTILOS EN style.css y bootstrap.min.css */
 /* Interiores de Servicios */
@@ -256,6 +266,20 @@ img.alignleft.desktop.clr-prodesal{background-color: #77ddd7; max-width: 100px; 
 img.alignleft.desktop.clr-presupuesto-y-cuenta-publica {background-color: #4e5b91; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}
 img.alignleft.desktop.clr-seguridad-ciudadana{background-color: #003d6f; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}
 
+/* Searchbar acotaciones */
+.dropdown-menu{left:inherit !important; width:91% !important;}
+
+
+/* PORTADA INICIO */
+
+/* Bajo el sidebar */
+.desktop.phone h3{text-align: right; font-weight: 600; color: #fff; opacity: 0.5; font-size: 37px; font-style: italic;} 
+.phone h2{font-size: 26px; font-weight: 900; color: #fff;}
+.phone span{font-size:14px; font-family: Georgia, "Times New Roman", Times, serif; text-align:left; color:#fff;}
+.trans img{margin: 15px auto 0; display: block;}
+.trans h2{font-size: 16px; color: #0fd1a6; margin-top: 10px; }}
+.transtag img{max-width: 145px !important; width:100% !important;}
+
 /* Estilos Responsive */
 @media screen and (min-width: 1024px){}
 @media (max-width:1023px) and (min-width: 935px){}
@@ -268,4 +292,55 @@ img.alignleft.desktop.clr-seguridad-ciudadana{background-color: #003d6f; max-wid
 	/* SALUD */
 	.cesfam,.postas{margin-bottom:30px; z-index:999;}
 	.health-prefoot h2{padding-left: 15px}
+
+	/* Turismo */
+	.searchh a {font-size: 15px; }
+	.dropdown-menu{width:92% !important;}
+
+	/* Searchbar */
+	.socials{display:none;}
+	.condition .mindeg, .condition .maxdeg{float:left; display:block;}
+	.condition, .date{margin-bottom:0 !important;}
+	.searchh{padding: 5px 0 0;}
+
+	/* Navegacion */
+	.navbar-brand{margin-right: 0; width: 75%;}
+	.navbar-brand img{width: 250px; max-width: 100%;}
+	.navbar-toggle{margin-top: 35px}
+	.searchandsocial{top:115px !important;}
+
+	/* Slider */
+	.col-md-4.col-xs-12.trans{padding: 0}
+	.base.clr-1{background: rgba(21, 89, 128, 0.5);}
+	section#slider .item {background-position: top center; background-repeat: no-repeat; background-size: cover; }
+	section#slider p{display:none;}
+	.home section#slider,
+	section#slider .base .inside{min-height:325px; height: 325px; }
+	.col-md-5.col-xs-12.phone{padding: 0}
+	.phone h2{font-size: 18px; }
+	.trans h2 {margin: 10px auto; display: block; text-align: center; }
+
+	/* Articulos Inicio */
+	.article h4{line-height: 130 !important; margin-top: 10px !important;}
+	.publish p{color:#5d5d5d;}
+
+	/* Servicios desde inicio */
+	img.alignleft.desktop.clr-aseo-y-ornato,
+	img.alignleft.desktop.clr-dideco,
+	img.alignleft.desktop.clr-medio-ambiente,
+	img.alignleft.desktop.clr-direccion-de-obras,
+	img.alignleft.desktop.clr-rentas-y-patentes,
+	img.alignleft.desktop.clr-departamento-de-transito, 
+	img.alignleft.desktop.clr-prodesal,
+	img.alignleft.desktop.clr-presupuesto-y-cuenta-publica, 
+	img.alignleft.desktop.clr-seguridad-ciudadana{display: none;}
+
+	section#servicios figure figcaption h3{padding:10px 3px 5px; height:45px;}
+	section#servicios figure figcaption p{padding:0 3px 10px; font-size:12px; }
+
+	/* Turismo desde Inicio */
+	aside#turismo figure figcaption .link a {padding: 0px 9px; background-color: #fff; display: inline-block; border-top-left-radius: 90px; margin-top: 59px; font-size: 26px; font-weight: 400; color: #000; }
+	/* Formulario portada de Inicio */
+	.col-md-12.form{padding:0;}
+	.wpcf7-form>.col-md-4{margin:20px 0;}
 }
