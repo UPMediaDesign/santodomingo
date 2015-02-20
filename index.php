@@ -20,7 +20,7 @@
                     <div class="cat">Noticias</div>
                     <div class="clear"></div>
                     <h2><a href="<?php echo get_permalink($post->ID)?>"><?php echo $post->post_title?></a></h2>
-                    <p><?php echo get_the_excerpt($post->ID)?></p>
+                    <p><?php echo substr($post->post_content , 0, 100)?>...</p>
                     <a href="<?php echo get_permalink($post->ID)?>" class="morelink"><span class="fa fa-circle"></span> Leer más</a>
                 </div>
             </div>
@@ -90,7 +90,7 @@
                                 <h4><?php echo $post->post_title?></h4>
                                 <p><?php echo get_the_excerpt($post->ID)?></p>
                                 <footer class="row">
-                                    <div class="col-md-8 col-xs-8 publish"><p>Fecha de Publicación:<?php echo get_the_date(); ?></p></div>
+                                    <div class="col-md-8 col-xs-8 publish"><p>Publicado el: <?php echo get_the_date(); ?></p></div>
                                     <div class="col-md-4"><a href="<?php echo get_permalink($post->ID)?>" class="morelink"><span class="fa fa-circle"></span> Leer más</a></div>
                                 </footer>
                             </div>
@@ -105,7 +105,7 @@
                                 <h4><?php echo get_the_title($post->ID)?></h4>
                                 <p><?php echo get_the_excerpt($post->ID)?></p>
                                 <footer class="row">
-                                    <div class="col-md-9 publish"><p>Fecha de Publicación:<?php echo get_the_date(); ?></p></div>
+                                    <div class="col-md-9 publish"><p>Publicado el: <?php echo get_the_date(); ?></p></div>
                                     <div class="col-md-3"><a href="<?php echo get_permalink($post->ID)?>" class="morelink"><span class="fa fa-circle"></span> Leer más</a></div>
                                 </footer>
                             </div>

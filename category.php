@@ -40,7 +40,7 @@
                     	<h4><?php echo $post->post_title?></h4>
                         <p><?php echo substr($post->post_content , 0, 100)?>...</p>
                         <footer class="row">
-                            <div class="col-md-9 dte">Fecha de publicación: <?php echo get_the_date('l, j \d\e F \d\e Y' , $post->ID)?></div>
+                            <div class="col-md-9 dte">Publicado el: <?php echo get_the_date('l, j \d\e F \d\e Y' , $post->ID)?></div>
                             <div class="col-md-3"><a href="<?php echo get_permalink($post->ID)?>" class="morelink"><span class="fa fa-circle"></span> Leer más</a></div>
                         </footer>
                     </article>
