@@ -283,7 +283,12 @@ img.alignleft.desktop.clr-seguridad-ciudadana{background-color: #003d6f; max-wid
 /* Estilos Responsive */
 @media screen and (min-width: 1024px){}
 @media (max-width:1023px) and (min-width: 935px){}
-@media (max-width:934px) and (min-width: 768px){}
+@media (max-width:934px) and (min-width: 768px){
+	/* Header */
+	.navbar .logo{width:90%; height:auto; margin-right: 0;}
+	.navbar-nav>li{font-size: 15px ;}
+
+}
 @media (max-width:767px) {
 	/* Auxiliares*/
 	.bootpd15mob{padding:0 15px;}
@@ -417,5 +422,10 @@ span.wpcf7-form-control-wrap.Email input[type="email"]{border:2px solid #003252;
 	.post-type-archive-turismo figure figcaption{height:85px;}
 	.post-type-archive-turismo figure figcaption p{ display:none;}
 	#map{padding-top: 30px;}
+	/*single turismo*/
+	.col-md-1>.miniseparator.clear{display: none;}
+	.sfbook.sslc, .sfbook.sslc{float:left;}
+	.sslc.btn {border-radius: 100px; padding: 15px; margin: 5px; }
+
 
 }
