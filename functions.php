@@ -239,8 +239,11 @@ function get_icon_for_attachment($post_id) {
 <?php 
 add_action( 'pre_get_posts', 'rc_modify_query_limit_posts' );
 function rc_modify_query_limit_posts( $query ) {
-	if(! is_admin() && $query->is_post_type_archive){
+	if(! is_admin() && $query->is_post_type_archive()){
 		$query->set('posts_per_page', '7');
+	}
+	elseif(! is_admin() && $query->is_main_query() && $query->is_post_type_archive() ){
+		$query->set('posts_per_page', '2');
 	}
 	elseif( ! is_admin() && $query->is_main_query() ) {
 		$query->set('posts_per_page', '10');

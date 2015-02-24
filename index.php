@@ -123,10 +123,14 @@
             	<h3>&nbsp;</h3>
                 <div class="clear sepatator border"></div> 
             	<div class="box" id="box1">
-                	<img src="<?php bloginfo('template_directory')?>/images/stdtv.png" width="100%" alt="" />
+                    <a href="<?php echo get_bloginfo('url')?>/santodomingotv/">
+                	   <img src="<?php bloginfo('template_directory')?>/images/stdtv.png" width="100%" alt="" />
+                    </a>
                 </div>
             	<div class="box" id="box2">
-                	<img src="<?php bloginfo('template_directory')?>/images/seguridad.png" width="100%" alt="" />
+                    <a href="<?php echo get_bloginfo('url')?>/servicio/seguridad-ciudadana/">
+                	   <img src="<?php bloginfo('template_directory')?>/images/seguridad.png" width="100%" alt="" />
+                    <a href=""></a>
                 </div>
             </aside>
         </div>
@@ -201,33 +205,38 @@
                 	
                     <div role="tabpanel">
                         <div class="tab-content">
-
-                        	<?php $turismo = get_posts(array('post_type' => 'turismo' , 'numberposts' => 2 , 'tipo' => 'lugar-turistico'))?>
-                            <?php $count = 0 ?>
+                             
+							<?php wp_reset_query()?>
+                        	<?php $turismo = get_posts(array('post_type' => 'turismo' , 'tipo' => 'lugar-turistico'))?>
                             <?php foreach($turismo as $place):?>
-                            <?php $count++ ?>
-                                <figure class="col-md-12">
-                                    <a href="<?php echo get_permalink($place->ID)?>"><?php echo get_the_post_thumbnail($place->ID , 'col-6' , array('class' =>'img-responsive'))?></a>
+                            
+                            <figure class="col-md-12">
+                                     <a href="<?php echo get_permalink($place->ID)?>"><?php echo get_the_post_thumbnail($place->ID , 'col-6' , array('class' =>'img-responsive'))?></a>
                                     <figcaption>
                                     	<div class="link"><a href="<?php echo get_permalink($place->ID)?>">+</a></div>
                                         <h3><?php echo $place->post_title?></h3>
                                         <p><?php echo $place->post_excerpt?></p>
                                         <div class="clear"></div>
                                     </figcaption>
-                                </figure>
+                                
                                 <div class="clear separator"></div>
+                            </figure>   
+                            
                             <?php endforeach?>
+                            
                                 
                         </div>
                         
                     </div>
                     
+                    <!--
                     <div class="col-md-12">
                             <ul class="nav nav-tabs" role="tablist">
                                 <li role="presentation" class="active"><a href="#turismo-1" aria-controls="turismo-1" role="tab" data-toggle="tab"><span class="fa fa-circle fa-fw"></span></a></li>
                                 <li role="presentation"><a href="#turismo-2" aria-controls="turismo-2" role="tab" data-toggle="tab"><span class="fa fa-circle fa-fw"></span></a></li>
                             </ul>
                     </div>
+                    -->
 
                 </div>
             

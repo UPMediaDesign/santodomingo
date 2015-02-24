@@ -35,17 +35,19 @@ Template Name: Historia
 		<div class="row">
         	<div class="col-md-8 col-md-offset-2">
             	<?php echo apply_filters('the_content' , $post->post_content)?>
-            </div>
-        </div>
+          </div>
+    </div>
 	</div>
 </main>
 <div class="clear separator"></div>
 
-<!-- Slider Test -->
+<!-- Slider Gallery -->
 <div class="container">
     <div class="row">
         <div class="col-md-8 col-md-offset-2">
 
+
+          <?php $gallery = get_field('slide_gallery') ?>
 
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
               <!-- Indicators -->
@@ -58,69 +60,38 @@ Template Name: Historia
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                 
-                <div class="item active">
-                  <div class="col-md-3 col-xs-3">
-                      <img src="<?php echo get_bloginfo('template_directory') ?>/images/stdtv.png" class="img-responsive" alt="...">
-                  
-                  </div>
-                  <div class="col-md-3 col-xs-3">
-                      <img src="<?php echo get_bloginfo('template_directory') ?>/images/stdtv.png" class="img-responsive" alt="...">
-                  
-                  </div>
-                  <div class="col-md-3 col-xs-3">
-                      <img src="<?php echo get_bloginfo('template_directory') ?>/images/stdtv.png" class="img-responsive" alt="...">
+                <?php $imcount = 0 ?>
+                <?php foreach($gallery as $image): ?>
+                <?php $imcount++ ?>
 
-                  </div>
+                <?php if($imcount == 1){?>
+                <div class="item <?php if($imcount == 1){echo 'active';} ?>">
+                <?php } ?>
+
                   <div class="col-md-3 col-xs-3">
-                      <img src="<?php echo get_bloginfo('template_directory') ?>/images/stdtv.png" class="img-responsive" alt="...">
-                  
+                      <a href="<?php echo $image['url'] ?>" rel="shadowbox[gal]">
+                        <img src="<?php echo $image['sizes']['midbox'] ?>" class="img-responsive" alt="...">
+                      </a>
                   </div>
+                  
+                  <?php if($imcount % 4 == 0 && $imcount < 12){?>
+                    </div><div class="item">
+                  <?php } ?>
+
+                <?php endforeach; ?>
+
                 </div>
 
-                <div class="item">
-                  <div class="col-md-3 col-xs-3">
-                    <img src="<?php echo get_bloginfo('template_directory') ?>/images/stdtv.png" class="img-responsive" alt="...">
-                    
-                  </div>
-                  <div class="col-md-3 col-xs-3">
-                      <img src="<?php echo get_bloginfo('template_directory') ?>/images/stdtv.png" class="img-responsive" alt="...">
-                      
-                  </div>
-                  <div class="col-md-3 col-xs-3">
-                      <img src="<?php echo get_bloginfo('template_directory') ?>/images/stdtv.png" class="img-responsive" alt="...">
-                  
-                  </div>
-                  <div class="col-md-3 col-xs-3">
-                      <img src="<?php echo get_bloginfo('template_directory') ?>/images/stdtv.png" class="img-responsive" alt="...">
-                  
-                  </div>
-                </div>
-
-                <div class="item">
-                  <div class="col-md-3 col-xs-3">
-                    <img src="<?php echo get_bloginfo('template_directory') ?>/images/stdtv.png" class="img-responsive" alt="...">
-                    
-                  </div>
-                  <div class="col-md-3 col-xs-3">
-                      <img src="<?php echo get_bloginfo('template_directory') ?>/images/stdtv.png" class="img-responsive" alt="...">
-                      
-                  </div>
-                  <div class="col-md-3 col-xs-3">
-                      <img src="<?php echo get_bloginfo('template_directory') ?>/images/stdtv.png" class="img-responsive" alt="...">
-                  
-                  </div>
-                  <div class="col-md-3 col-xs-3">
-                      <img src="<?php echo get_bloginfo('template_directory') ?>/images/stdtv.png" class="img-responsive" alt="...">
-                  
-                  </div>
-                </div>
+                
 
               </div>
 
             </div>
         </div>
     </div>
+    <div class="clear separator"></div>
 </div>
+<!-- Fin slider gallery -->
 
 <div class="clear separator"></div>
 <div class="clear separator"></div>

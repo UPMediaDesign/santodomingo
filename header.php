@@ -17,6 +17,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>?ver=3.8.1" />
 <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/cfix.css" />
+<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/shadowbox.css" />
 
 <!-- FontAwesome -->
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -30,6 +31,11 @@
 <?php call_scripts()?>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 <script type="text/javascript" src="<?php bloginfo('template_directory')?>/js/bxslider.js"></script>
+<script type="text/javascript">
+Shadowbox.init({
+    modal: false
+});
+</script>
 
 <?php if(is_home()){?>
 

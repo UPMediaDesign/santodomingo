@@ -52,6 +52,16 @@ presupuesto:	#4e5b91s
 .named{padding-top: 14.95%;}
 .titular h1, .named h1{font-size:26px; font-family: 'Pluto'; text-align: right; color:#fff;}
 ul.titular li{text-align: right; font-family: Georgia, serif; font-size:14px; color:#fff; float:right; clear:both; }
+.navbar-nav>.active-contacto>a{background:#56a32a; color:#fff !important; -webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+.navbar-nav>.active-contacto>a:hover{background:#328B00 !important; -webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
 
 /* TEMPLATE SALUD */
 /* Encabezado Contenido*/
@@ -149,7 +159,7 @@ li.col-md-4.contab a{background: #fff !important; color: #003252 !important; fon
 .major p{text-align: left; color:#fff; font-size: 13px; padding:5px 10px; font-family: "Times New Roman", Times, serif; height:30px;}
 
 /* Historia */
-ol.carousel-indicators.page{position: absolute; top: 125px; right: 40px; z-index: 15; width: 75.8%; padding-left: 0; margin-left: -30%; text-align: right; list-style: none; left: 10%;}
+ol.carousel-indicators.page{position: absolute; top: 145px; right: 40px; z-index: 15; width: 75.8%; padding-left: 0; margin-left: -30%; text-align: right; list-style: none; left: 10%;}
 .carousel-indicators.page li.active{background: #f79700 !important; border:6px solid #a5a5a5; }
 .carousel-indicators.page li {background: #fff; border: 6px solid #a5a5a5; width: 25px; height: 25px; border-radius: 50%; margin:0px;}
 .item div.col-md-3.col-xs-3{padding: 0 5px;}
@@ -215,6 +225,8 @@ transition: all 0.5s ease-in-out;}
 /* Paginador Noticias */
 .wp-paginate .title{display:none;}
 .wp-paginate {padding: 0; margin: 0 auto; display: block; text-align: center; }
+/* Slider Noticias */
+.col-md-12>.carousel{height:150px;}
 
 /* Turismo */
 .clr-11.btn.btn-default{font-family:'Pluto'; color:#fff; padding:15px;-webkit-transition: all 0.5s ease-in-out;
@@ -269,6 +281,13 @@ img.alignleft.desktop.clr-seguridad-ciudadana{background-color: #003d6f; max-wid
 /* Searchbar acotaciones */
 .dropdown-menu{left:inherit !important; width:91% !important;}
 
+/* Contacto */
+.form p{font-family: 'Pluto'; font-weight: 900; color: #155980; font-family: 'Pluto' , helvetica, arial, sans-serif; text-transform: uppercase;}
+input.wpcf7-form-control.wpcf7-text {display: block; width: 100%; height: 34px; padding: 20px 15px; font-size: 14px; line-height: 1.42857143; color: #555; background-color: #f2f2f4; background-image: none; border: 3px solid #003252; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 1px rgba(0,0,0,.075); -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s; -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; font-family: 'Pluto'; font-weight: 900; text-transform: uppercase;}
+textarea.wpcf7-form-control.wpcf7-textarea{display: block; width: 100%;  padding: 20px 15px; font-size: 14px; line-height: 1.42857143; color: #555; background-color: #f2f2f4; background-image: none; border: 3px solid #003252; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 1px rgba(0,0,0,.075); -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s; -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; font-family: 'Pluto'; font-weight: 900; text-transform: uppercase;}
+.wpcf7-response-output.wpcf7-display-none.wpcf7-mail-sent-ng{clear:both;}
+
+
 
 /* PORTADA INICIO */
 
@@ -284,9 +303,6 @@ img.alignleft.desktop.clr-seguridad-ciudadana{background-color: #003d6f; max-wid
 @media screen and (min-width: 1024px){}
 @media (max-width:1023px) and (min-width: 935px){}
 @media (max-width:934px) and (min-width: 768px){
-	/* Header */
-	.navbar .logo{width:90%; height:auto; margin-right: 0;}
-	.navbar-nav>li{font-size: 15px ;}
 
 }
 @media (max-width:767px) {

@@ -141,7 +141,7 @@
                             <div class="col-md-1 col-esp">
                                 <a href="<?php echo wp_get_attachment_url(get_field('documento',$doc->ID))?>" class="ico-link clr-<?php echo $post->post_name?>">
                                 	<span class="fa fa-lg <?php echo get_icon_for_attachment(get_field('documento',$doc->ID))?>">
-                                        <h4><?php echo $doc->post_title?></h4>
+                                        <h4 class="mobile"><?php echo $doc->post_title?></h4>
                                     </span>
                                 </a> 
                                 <?php //echo get_type_for_attachment(get_field('documento',$doc->ID))?>

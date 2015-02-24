@@ -4,6 +4,18 @@
 		"selected_items":
 		[
 			[
+				"font",
+				"font-family"
+			],
+			[
+				"template",
+				"template_directory"
+			],
+			[
+				"im",
+				"imcount"
+			],
+			[
 				"margin",
 				"margin-right"
 			],
@@ -14,10 +26,6 @@
 			[
 				"text",
 				"text-align"
-			],
-			[
-				"font",
-				"font-size"
 			],
 			[
 				"pad",
@@ -235,7 +243,7 @@
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 12498,
+				"buffer_size": 12850,
 				"line_ending": "Unix"
 			}
 		},
@@ -253,7 +261,7 @@
 			"file": "page.php",
 			"settings":
 			{
-				"buffer_size": 8669,
+				"buffer_size": 8684,
 				"line_ending": "Unix"
 			}
 		},
@@ -277,7 +285,7 @@
 			"file": "page-historia.php",
 			"settings":
 			{
-				"buffer_size": 4933,
+				"buffer_size": 2969,
 				"line_ending": "Unix"
 			}
 		},
@@ -301,7 +309,32 @@
 			"file": "single.php",
 			"settings":
 			{
-				"buffer_size": 1853,
+				"buffer_size": 3411,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 3663,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page-contacto.php",
+			"settings":
+			{
+				"buffer_size": 1434,
+				"line_ending": "Unix",
+				"name": "<?php"
+			}
+		},
+		{
+			"file": "js/shadowbox.js",
+			"settings":
+			{
+				"buffer_size": 37298,
 				"line_ending": "Unix"
 			}
 		},
@@ -309,26 +342,15 @@
 			"file": "style.css",
 			"settings":
 			{
-				"buffer_size": 29817,
+				"buffer_size": 32009,
 				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "functions.php",
-			"settings":
-			{
-				"buffer_size": 8034,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"contents": "/*\nColorChart\ncolor 1: 		#155980\ncolor 2: 		#1970a1\ncolor 3: 		#1183c4\ncolor 4: 		#1577af\ngreen accent: 	#56a32a\nyellow: 		#f79700\nemerald:		#08bc94\nredtv:			#ce313f\nbluseguridad:	#003d6f\ntransito:		#ffc800\naseo:			#bd355b\nrentas:			#4e5b91\nobras:			#ff801a\nmedioambiente:	#56a32a\ndideco:			#008e82\nprodesal:		#77ddd7\npresupuesto:	#4e5b91s\n*/\n.clr-1	{ background-color:#155980}\n.clr-2	{ background-color:#1970a1}\n.clr-3	{ background-color:#1183c4}\n.clr-4	{ background-color:#1577af}\n.clr-5	{ background-color:#56a32a}\n.clr-6	{ background-color:#f79700}\n.clr-7	{ background-color:#08bc94}\n.clr-8	{ background-color:#ce313f}\n.clr-9	{ background-color:#003d6f}\n.clr-10	{ background-color:#ffc800}\n.clr-11	{ background-color:#bd355b}\n.clr-12	{ background-color:#4e5b91}\n.clr-13	{ background-color:#ff801a}\n.clr-14	{ background-color:#56a32a}\n.clr-15	{ background-color:#008e82}\n.clr-16	{ background-color:#77ddd7}\n.clr-17	{ background-color:#4e5b91}\n.clr-18 { background-color:#3599cb}\n\n/*******************************************************************************************/\n/*************************************Style Carlos************************************************/\n/*******************************************************************************************/\n\n\n/* Auxiliares */\n.pd0{padding:0;}\n.pleft15{padding-left: 15px;}\n.pright10{padding-right:10px;}\n.pright15{padding-right: 15px;}\n\n/* PAGE COMÚN */\n.named{padding-top: 14.95%;}\n.titular h1, .named h1{font-size:26px; font-family: 'Pluto'; text-align: right; color:#fff;}\nul.titular li{text-align: right; font-family: Georgia, serif; font-size:14px; color:#fff; float:right; clear:both; }\n\n/* TEMPLATE SALUD */\n/* Encabezado Contenido*/\nmain#salud{margin-top:50px;}\nfigcaption.health{text-align:left; background:rgba(86, 163, 42, 0.6); padding:10px 10px;}\nfigcaption.health p{font-family: 'Pluto'; font-size: 25px; font-weight: 900; color: #fff; padding: 15px 0 5px;}\n.health img{background: #3a7816; border-radius: 50%; width: 100%; height: auto; max-width: 70px; padding: 10px; float: left; margin-right:10px;}\n\n/*Sidebar izquierdo*/\n.cesfam h3 a, .postas h3 a{color:#fff; text-align:left; font-size:15px; padding:10px; margin-bottom: 0; margin-top:0; \n-webkit-transition: all 0.5s ease-in-out;\n-moz-transition: all 0.5s ease-in-out;\n-ms-transition: all 0.5s ease-in-out;\n-o-transition: all 0.5s ease-in-out;\ntransition: all 0.5s ease-in-out;}\n.cesfam h3 a:hover, \n.postas h3 a:hover{color: rgba(255, 255, 255, 0.7); text-align:left; font-size:15px; padding:10px; margin-bottom: 0; margin-top:0; text-decoration:none;\n-webkit-transition: all 0.5s ease-in-out;\n-moz-transition: all 0.5s ease-in-out;\n-ms-transition: all 0.5s ease-in-out;\n-o-transition: all 0.5s ease-in-out;\ntransition: all 0.5s ease-in-out;}\n.cesfam p, .postas p{color:#fff; font-family: Georgia, serif; font-size:14px; text-align: left; line-height:140%; padding:0 10px 10px; font-style: italic;}\n.cesfam{background:#56a32a; border-top: 50px solid #3a7816; margin-bottom: 20px;}\n.postas{background:#1970a1; border-top: 50px solid #155980; margin-bottom:20px;}\n\n/* Circulos icónicos */\n.circle{border-radius: 50px; width: 90px; height: 90px; margin: -40px auto 0; text-align: center;}\n.circle.clr-2{background:url(images/servicios.png) -105px 290px #155980;}\n.circle.clr-14{background: url(images/servicios.png) -5px -205px #3a7816;}\n\n/* Contenido */\n.health-content h3{margin-top:0;}\n.health-content p{font-style: normal; text-align: left; font-family:Georgia, serif; line-height: 160%; color:#5d5d5d; font-size:16px;}\n\n/* Contenido Relacionado */\n.health-prefoot h2{color:#155980; font-family: 'Pluto'; text-align: left; font-size:25px; font-weight:900;}\n.health-prefoot h3{color:#1183c4; font-family: 'Pluto'; text-align: left; font-size: 14px; font-weight:600;}\n.health-prefoot p{color:#5d5d5d; font-style: italic; font-size:14px; line-height:1.42857143; font-family: Georgia, serif;}\n\n\n/* TEMPLATE EDUCACIÓN */\n/* Encabezado Contenido*/\nmain#educacion{margin-top:50px;}\nfigcaption.teach{text-align:left; background:rgba(86, 163, 42, 0.6); padding:10px 10px;}\nfigcaption.teach p{font-family: 'Pluto'; font-size: 25px; font-weight: 900; color: #fff; padding: 15px 0 5px;}\n.teach img{background: #3a7816; border-radius: 50%; width: 100%; height: auto; max-width: 70px; padding: 10px; float: left; margin-right:10px;}\n\n/* Pestañas de contenido */\n.nav-tabs.col-md-12{margin-top:0;}\n.nav-tabs>li.col-md-4 a:hover{border: 2px solid #003252; background: #f2f2f2 !important;}\n.nav-tabs>li.col-md-4{float:left;  padding: 2px}\n.nav-tabs>li.col-md-4.last{margin-right:0;}\n.nav-tabs>li.active.col-md-4 a{background:#003252 !important; color:#fff !important; font-size:17px; font-family: 'Pluto'; text-align: center; border-radius: 5px; cursor:pointer; text-transform: uppercase;}\n.nav-tabs>li.col-md-4 a{background: #fff !important; color: #003252 !important; font-size: 17px; font-family: 'Pluto'; text-align: center; padding: 20px 0px 0; line-height: 100%; height: 59px; width: 100%; border: 2px solid #003252; border-radius: 5px; text-transform: uppercase;}\n.teachtab[role=\"tabpanel\"] h3{text-align: left; font-size:26px; }\n.teachtab[role=\"tabpanel\"] p{}\n\n/* Sidebar Noticias Educación */\n.teachnews h2{text-align: left; font-weight: 900; font-size: 26px;}\n.teachnews h3{font-family: 'Pluto'; font-size: 16px; text-align: left; color: #1183c4;}\n.teachnews p{font-style: italic; line-height: 130%;}\n\n/* TEMPLATE MUNICIPIO */\nsection#slider .clr-2.skk.desktop:after{background-color:#1970a1}\n#righted.inside.col-lg-10.col-md-offset-2{padding-top:165px !important;}\n#righted.inside p{text-align: right; font-size: 16px; line-height: 140%;}\n.council-intro h3,\n.council h3, \n.council-intro h4, \n.council-intro h5{text-align:center;}\n.council-intro p{font-family: Georgia, \"Times New Roman\",  Times, serif; font-size: 15px; line-height: 160%; font-style: italic; color: #5d5d5d; padding-bottom: 20px; text-align: left;}\n.council p{font-family: Georgia, \"Times New Roman\",  Times, serif; font-size: 15px; line-height: 160%; font-style: italic; color: #5d5d5d; padding-bottom: 20px; text-align: center;}\n.council img{display:block; text-align:center; text-align:center; margin: 0 auto;}\n.majorlist h3{}\n.civilcouncil h2{margin-top: 0; font-family: 'Pluto'; font-weight: 900; color: #155980; font-size: 26px;}\n.civilcouncil p{font-family: \"Times New Roman\", Times, serif;font-style: normal; text-align: left; font-size: 16px; }\n/* Pestañas de Contenido */\nli.col-md-4.contab a{background: #fff !important; color: #003252 !important; font-size: 17px; font-family: 'Pluto'; text-align: center; padding: 20px 20px 0; line-height: 100%; height: 59px; width: 100%; border: 2px solid #003252; border-radius: 5px;}\n\n.func-council ul li{font-family: Georgia, \"Times New Roman\", Times, serif; font-size: 14px; text-align: left; font-style: italic; line-height: 180%; list-style: none; margin-bottom: 24px;}\n.func-council ul li strong{background: #1970a1; border-radius: 50%; padding: 10px 19px; font-size: 16px; font-weight: 900; font-family: 'Pluto'; color: #fff; font-style: normal !important; text-align: center; float: left; display: block; margin-right: 15px;}\n\n.coninteger p{text-align:left; font-family:Georgia, \"Times New Roman\", Times, serif; font-size:14px; line-height: 140%;}\n\n.question p{text-align: left; font-family: \"Times New Roman\", Times, serif; font-size:14px; line-height: 140%;}\n\n/* Galeria Alcaldes */\n.megacontainer.clr-18{display:inline-block;}\n.col-md-2.major{padding: 0 5px;}\n.col-md-12.major h2{color:#fff; font-weight:bold; font-size: 26px;}\n.col-md-2.major img{width: 100%; height: auto;}\n.major figcaption{background: #f5ba05; clear: both; height: 115px; /*width: 100%;*/ padding: 0;}\n.major h3{color: #fff; font-size: 15px; text-align: left; padding: 10px 10px 0; margin-top: 0; height:70px;}\n.major p{text-align: left; color:#fff; font-size: 13px; padding:5px 10px; font-family: \"Times New Roman\", Times, serif; height:30px;}\n\n/* Historia */\nol.carousel-indicators.page{position: absolute; top: 125px; right: 40px; z-index: 15; width: 75.8%; padding-left: 0; margin-left: -30%; text-align: right; list-style: none; left: 10%;}\n.carousel-indicators.page li.active{background: #f79700 !important; border:6px solid #a5a5a5; }\n.carousel-indicators.page li {background: #fff; border: 6px solid #a5a5a5; width: 25px; height: 25px; border-radius: 50%; margin:0px;}\n.item div.col-md-3.col-xs-3{padding: 0 5px;}\n\n\n/* Seguridad Ciudadana */\nh3.service{text-align: center; border-bottom: 1px solid #a5a5a5; font-size: 20px; height: 45px; margin-bottom: 35px; }\n/* Área Iconica de Servicios */\n.service .clr-15, .clr-dideco{background-color: #008e82; width: 100%; max-width: 75%; border-radius: 50%; border: 5px solid #0E6E66; padding: 8%; display: block; margin: 0 auto;}\n.service .clr-9, .clr-seguridad-ciudadana{background-color: #003d6f; width: 100%; max-width: 75%; border-radius: 50%; border: 5px solid #006DC7; padding: 8%; display: block; margin: 0 auto;}\n.service .clr-11, .clr-aseo-y-ornato {background-color: #bd355b; width: 100%; max-width: 75%; border-radius: 50%; border:5px solid #AB0030; padding: 8%; display: block; margin: 0 auto; }\n.service .clr-14, .clr-medio-ambiente {background-color: #56a32a;width: 100%; max-width: 75%; border-radius: 50%; border: 5px solid #318600; padding: 8%; display: block; margin: 0 auto; }\n.sservice .clr-13, .clr-direccion-de-obras {background-color: #ff801a; width: 100%; max-width: 75%; border-radius: 50%; border:5px solid #E46D0D; padding: 8%; display: block; margin: 0 auto;}\n.service.clr-12, .clr-rentas-y-patentes {background-color: #4e5b91; width: 100%; max-width: 75%; border-radius: 50%;border: 5px solid #687FE0; padding: 8%; display: block; margin: 0 auto; }\n.service .clr-10, .clr-departamento-de-transito {background-color: #ffc800; width: 100%; max-width: 75%; border-radius: 50%; border: 5px solid #E8B704; padding: 8%; display: block; margin: 0 auto; }\n.service .clr-16, .clr-prodesal {background-color: #77ddd7; width: 100%; max-width: 75%; border-radius: 50%; border: 5px solid #65BBB6; padding: 8%; display: block; margin: 0 auto; }\n.service .clr-17, .clr-presupuesto-y-cuenta-publica {background-color: #4e5b91; width: 100%; max-width: 75%; border-radius: 50%; border: 5px solid #006DC7; padding: 8%; display: block; margin: 0 auto; }\n\n/* Area Servicios Contenido */\n.panel-default>.panel-heading.clr-presupuesto-y-cuenta-publica {width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #4e5b91; border:none;}\n.panel-default>.panel-heading.clr-departamento-de-transito{width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #ffc800; border:none;}\n.panel-default>.panel-heading.clr-rentas-y-patentes {width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #ffc800; border:none;}\n.panel-default>.panel-heading.clr-direccion-de-obras{width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #ff801a; border:none;}\n.panel-default>.panel-heading.clr-medio-ambiente{width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #56a32a; border:none;}\n.panel-default>.panel-heading.clr-aseo-y-ornato {width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #bd355b; border:none;}\n.panel-default>.panel-heading.clr-seguridad-ciudadana {width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #003d6f; border:none;}\n.panel-default>.panel-heading.clr-dideco {width: 100%; max-width: 100%; border-radius: 5px; padding: 15px; color: #fff; background-color: #008e82; border:none;}\n\nbutton.btn.btn-primary.dropdown-toggle.btn-block{font-family: 'Pluto'; font-size: 15px; font-weight: 500; padding: 12px 0;}\n\nh4.panel-title a{font-family:'Pluto'; text-transform: uppercase; font-size:16px;}\n/* Portada Inicio */\nspan.wpcf7-form-control-wrap.Nombre input[type=\"text\"],\nspan.wpcf7-form-control-wrap.Email input[type=\"email\"]{display: block; width: 100%; height: 34px; padding: 20px 15px; font-size: 14px; line-height: 1.42857143; color: #555; background-color: #f2f2f4; background-image: none; border: 3px solid #003252; border-radius: 4px; -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075); box-shadow: inset 0 1px 1px rgba(0,0,0,.075); -webkit-transition: border-color ease-in-out .15s,-webkit-box-shadow ease-in-out .15s; -o-transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; transition: border-color ease-in-out .15s,box-shadow ease-in-out .15s; font-family: 'Pluto'; font-weight: 900; text-transform: uppercase;}\ninput.btn-success{color: #fff; background: #1183c4; border-color:transparent; border-radius: 5px; font-family: pluto; text-transform: uppercase; padding: 12px; -webkit-transition: all 0.5s ease-in-out;\n-moz-transition: all 0.5s ease-in-out;\n-ms-transition: all 0.5s ease-in-out;\n-o-transition: all 0.5s ease-in-out;\ntransition: all 0.5s ease-in-out;}}\n\ninput.btn-success:hover{background: #155980 !important; border-color:transparent;-webkit-transition: all 0.5s ease-in-out;\n-moz-transition: all 0.5s ease-in-out;\n-ms-transition: all 0.5s ease-in-out;\n-o-transition: all 0.5s ease-in-out;\ntransition: all 0.5s ease-in-out;} }\n\n/* Noticias */\n.asidemenu li a {background: #bd355b; color:#fff; font-family: 'Pluto'; font-weight:600; font-size: 16px; padding:10px 5px;}\nli a span.pull-right> span.fa.fa-chevron-circle-right{-webkit-transition: all 0.5s ease-in-out;\n-moz-transition: all 0.5s ease-in-out;\n-ms-transition: all 0.5s ease-in-out;\n-o-transition: all 0.5s ease-in-out;\ntransition: all 0.5s ease-in-out;}\nli a span.pull-right> span.fa.fa-chevron-circle-right:hover{-webkit-transform: rotate(90deg); -moz-transform: rotate(90deg); -o-transform: rotate(90deg); writing-mode: tb-rl; -webkit-transition: all 0.5s ease-in-out;\n-moz-transition: all 0.5s ease-in-out;\n-ms-transition: all 0.5s ease-in-out;\n-o-transition: all 0.5s ease-in-out;\ntransition: all 0.5s ease-in-out;}\n\n.col-md-6.typo a h4{padding-top:10px; padding-bottom: 5px;}\n.col-md-6.typo p{padding-bottom:0px;}\n\n/* Paginador Noticias */\n.wp-paginate .title{display:none;}\n.wp-paginate {padding: 0; margin: 0 auto; display: block; text-align: center; }\n\n/* Turismo */\n.clr-11.btn.btn-default{font-family:'Pluto'; color:#fff; padding:15px;-webkit-transition: all 0.5s ease-in-out;\n-moz-transition: all 0.5s ease-in-out;\n-ms-transition: all 0.5s ease-in-out;\n-o-transition: all 0.5s ease-in-out;\ntransition: all 0.5s ease-in-out;}\n.clr-11.btn.btn-default:hover{background:#AB0030; padding:15px;-webkit-transition: all 0.5s ease-in-out;\n-moz-transition: all 0.5s ease-in-out;\n-ms-transition: all 0.5s ease-in-out;\n-o-transition: all 0.5s ease-in-out;\ntransition: all 0.5s ease-in-out;}\na.clr-3.btn.btn-success.btn-block{font-family:'Pluto'; color:#fff; border:none; padding:17px;-webkit-transition: all 0.5s ease-in-out;\n-moz-transition: all 0.5s ease-in-out;\n-ms-transition: all 0.5s ease-in-out;\n-o-transition: all 0.5s ease-in-out;\ntransition: all 0.5s ease-in-out;}\na.clr-3.btn.btn-success.btn-block:hover{background:#1970a1; border:none; padding:17px;-webkit-transition: all 0.5s ease-in-out;\n-moz-transition: all 0.5s ease-in-out;\n-ms-transition: all 0.5s ease-in-out;\n-o-transition: all 0.5s ease-in-out;\ntransition: all 0.5s ease-in-out;}\na.clr-3.btn.btn-success.btn-block:focus{background:#155980; border:none; padding:17px;-webkit-transition: all 0.5s ease-in-out;\n-moz-transition: all 0.5s ease-in-out;\n-ms-transition: all 0.5s ease-in-out;\n-o-transition: all 0.5s ease-in-out;\ntransition: all 0.5s ease-in-out;}\n\nspan.fa.fa-caret-down{border: 2px solid #fff; padding: 2px 5px; border-radius: 15px;}\n.link a{background: #fff; padding: 5px 10px; -webkit-border-top-left-radius: 50px; -moz-border-radius-topleft: 50px; border-top-left-radius: 50px; float: right; text-align: left; color: #155980; font-size: 25px; height: 30px; width: 30px}\n\n/* Acotacion en los diferentes tipos de columnas */\n.col-md-6.col-esp >figcaption> div.link a{position: absolute; left: 95%; bottom: 0;}\n.col-md-4.col-sm-6.col-esp >figcaption> div.link a{position: absolute; left: 93%; bottom: 0;}\n.col-md-2.col-sm-6.col-esp >figcaption> div.link a{position: absolute; left: 85%; bottom: 0;}\n\n/* ACOTACIONES A ESTILOS EN style.css y bootstrap.min.css */\n/* Interiores de Servicios */\n.panel-group .panel-heading {border-bottom: 0; border-radius: 5px; padding: 15px; margin: 0; max-width: 100%; border: 0; }\n\n/* Inicio */\nimg.alignleft.desktop.clr-aseo-y-ornato {background-color: #bd355b; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}\nimg.alignleft.desktop.clr-dideco{background-color: #008e82; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}\nimg.alignleft.desktop.clr-medio-ambiente {background-color: #56a32a; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}\nimg.alignleft.desktop.clr-direccion-de-obras {background-color:#ff801a; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}\nimg.alignleft.desktop.clr-rentas-y-patentes {background-color: #4e5b91; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}\nimg.alignleft.desktop.clr-departamento-de-transito {background-color: #ffc800; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}\nimg.alignleft.desktop.clr-prodesal{background-color: #77ddd7; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}\nimg.alignleft.desktop.clr-presupuesto-y-cuenta-publica {background-color: #4e5b91; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}\nimg.alignleft.desktop.clr-seguridad-ciudadana{background-color: #003d6f; max-width: 100px; border-radius: 0; border: none; padding: 0; display: block; margin-right: 10px; width: 100%;}\n\n/* Searchbar acotaciones */\n.dropdown-menu{left:inherit !important; width:91% !important;}\n\n\n/* PORTADA INICIO */\n\n/* Bajo el sidebar */\n.desktop.phone h3{text-align: right; font-weight: 600; color: #fff; opacity: 0.5; font-size: 37px; font-style: italic;} \n.phone h2{font-size: 26px; font-weight: 900; color: #fff;}\n.phone span{font-size:14px; font-family: Georgia, \"Times New Roman\", Times, serif; text-align:left; color:#fff;}\n.trans img{margin: 15px auto 0; display: block;}\n.trans h2{font-size: 16px; color: #0fd1a6; margin-top: 10px; }}\n.transtag img{max-width: 145px !important; width:100% !important;}\n\n/* Estilos Responsive */\n@media screen and (min-width: 1024px){}\n@media (max-width:1023px) and (min-width: 935px){}\n@media (max-width:934px) and (min-width: 768px){\n\n}\n@media (max-width:767px) {\n	/* Auxiliares*/\n	.bootpd15mob{padding:0 15px;}\n\n	/* SALUD */\n	.cesfam,.postas{margin-bottom:30px; z-index:999;}\n	.health-prefoot h2{padding-left: 15px}\n\n	/* Turismo */\n	.searchh a {font-size: 15px; }\n	.dropdown-menu{width:92% !important;}\n\n	/* Searchbar */\n	.socials{display:none;}\n	.condition .mindeg, .condition .maxdeg{float:left; display:block;}\n	.condition, .date{margin-bottom:0 !important;}\n	.searchh{padding: 5px 0 0;}\n\n	/* Navegacion */\n	.navbar-brand{margin-right: 0; width: 75%;}\n	.navbar-brand img{width: 250px; max-width: 100%;}\n	.navbar-toggle{margin-top: 35px}\n	.searchandsocial{top:115px !important;}\n\n	/* Slider */\n	.col-md-4.col-xs-12.trans{padding: 0}\n	.base.clr-1{background: rgba(21, 89, 128, 0.5);}\n	section#slider .item {background-position: top center; background-repeat: no-repeat; background-size: cover; }\n	section#slider p{font-size:14px;}\n	.home section#slider,\n	section#slider .base .inside{min-height:385px; height: 325px; /*padding-top: 75px; */}\n	.col-md-5.col-xs-12.phone{padding: 0}\n	.phone h2{font-size: 18px; }\n	.trans h2 {margin: 10px auto; display: block; text-align: center; }\n\n	/* Articulos Inicio */\n	.article h4{line-height: 130%; margin-top: 10px !important;}\n	.publish p{color:#5d5d5d;}\n\n	/* Servicios desde inicio */\n	img.alignleft.desktop.clr-aseo-y-ornato,\n	img.alignleft.desktop.clr-dideco,\n	img.alignleft.desktop.clr-medio-ambiente,\n	img.alignleft.desktop.clr-direccion-de-obras,\n	img.alignleft.desktop.clr-rentas-y-patentes,\n	img.alignleft.desktop.clr-departamento-de-transito, \n	img.alignleft.desktop.clr-prodesal,\n	img.alignleft.desktop.clr-presupuesto-y-cuenta-publica, \n	img.alignleft.desktop.clr-seguridad-ciudadana{display: none;}\n\n	section#servicios figure figcaption h3{padding:10px 3px 5px; height:45px; line-height:130%;}\n	section#servicios figure figcaption p{padding:0 3px 10px; font-size:13px; }\n\n	/* Turismo desde Inicio */\n	aside#turismo figure figcaption .link a {padding: 0px 9px; background-color: #fff; display: inline-block; border-top-left-radius: 90px; margin-top: 61px; font-size: 26px; font-weight: 400; color: #155980;}\n\n	/* Formulario portada de Inicio */\n	.col-md-12.form{padding:0;}\n	.wpcf7-form>.col-md-4{margin:20px 0;}\n	span.wpcf7-form-control-wrap.Nombre input[type=\"text\"],\nspan.wpcf7-form-control-wrap.Email input[type=\"email\"]{border:2px solid #003252;}\n\n	/* Footer */\n	#footer a{font-size:14px;}\n	#footer li.clear.mobile{display:block;}\n\n	/*Breadcrumb*/\n	.breadcrumb {padding: 12px 0;}\n	/*Jumbotron*/\n	.jumbotron h1, .jumbotron .h1{margin-bottom: 18px; font-size: 30px;}\n\n	/* MUNICIPIO */\n	#righted.inside p{display:block; text-align: left;}\n	.col-md-3.col-md-push-9.clr-2.base{background:rgba(1, 89, 128, 0.5);}\n	#righted.inside.col-lg-10.col-md-offset-2 {padding-top: 80px !important; }\n	.council-intro h3{text-align: left; margin-top: 0; line-height: 140%;}\n	section#slider .inner .jumbotron{padding-top:65px;}\n	main{padding:25px 0 0;}\n\n	/* SERVICIOS */\n	h4.panel-title a{font-size: 12px;}\n	.panel-default>.panel-heading.clr-aseo-y-ornato{padding:10px;}\n	.panel-default>.panel-heading.clr-dideco{padding:10px;}\n	.panel-default>.panel-heading.clr-medio-ambiente{padding:10px;}\n	.panel-default>.panel-heading.clr-direccion-de-obras{padding:10px;}\n	.panel-default>.panel-heading.clr-rentas-y-patentes{padding:10px;}\n	.panel-default>.panel-heading.clr-departamento-de-transito{padding:10px;} \n	.panel-default>.panel-heading.clr-prodesal{padding:10px;}\n	.panel-default>.panel-heading.clr-presupuesto-y-cuenta-publica{padding:10px;} \n	.panel-default>.panel-heading.clr-seguridad-ciudadana{padding:10px;}\n	section#documentos h3, section#documentos h5{font-size: 18px; margin-bottom:10px;}\n	section#documentos .ico-link{max-width: 100%; width: 97%; font-size: 15px; padding: 0; background: none;} \n	.fa-file-photo-o:before, .fa-file-picture-o:before, .fa-file-image-o:before {content: \"\\f1c5\"; text-align: center; display: block; margin: 6px 0; margin: 15px 0; font-size: 35px;}\n	section#documentos .ico-link h4 {font-size: 15px; text-align: center;}\n	section#servicios_page ul li{width: 20%;}\n	section#servicios_page ul li img{margin: 5px auto;}\n	a.ico-link.clr-aseo-y-ornato{color: #bd355b !important;}\n	a.ico-link.clr-dideco{color: #008e82 !important;}\n	a.ico-link.clr-medio-ambiente{color: #56a32a !important;}\n	a.ico-link.clr-direccion-de-obras{color: #ff801a !important;}\n	a.ico-link.clr-rentas-y-patentes{color: #4e5b91 !important;}\n	a.ico-link.clr-departamento-de-transito{color: #ffc800 !important;}\n	a.ico-link.clr-prodesal{color: #77ddd7 !important;}\n	a.ico-link.clr-presupuesto-y-cuenta-publica{color: #4e5b91 !important;}\n	a.ico-link.clr-seguridad-ciudadana{color: #003d6f !important;}\n	section#slider, .single section#slider, .category section#slider{height: auto !important;}\n\n	.btn-sm, .btn-group-sm>.btn{font-size: 14px;}\n\n	/* SALUD */\n	figure.col-md-12.col-esp{margin-top:145px;}\n	figcaption.teach p,\n	figcaption.health p{font-size: 15px; padding:0; margin-bottom: 0;}\n	.cesfam h3, .postas h3,\n	.cesfam h3 a, .postas h3 a{text-align: center; display: block; margin: 0 auto; padding: 0px; margin-top: 5px; font-size: 14px; height:30px;}\n	.cesfam p, .postas p{text-align: center;}\n\n	/* Educacion */\n	.nav-tabs>li.col-md-4{width: 100%; float: none; margin: 16px auto; display: block;}\n	.nav-tabs.col-md-12{width:100%; padding:0;}\n	.nav-tabs>li.col-md-4 a{font-size:15px;}\n	.teachnews h2{padding:0 15px;}\n\n	/*Noticias*/\n	.col-md-6.typo{padding:0;}\n\n	/*Turismo*/\n	.clr-11.btn.btn-default{margin:25px 0 15px}\n	.col-md-2.col-sm-6.col-esp >figcaption> div.link a,\n	.col-md-6.col-esp >figcaption> div.link a{left: 90%;}\n	.post-type-archive-turismo figure figcaption{height:85px;}\n	.post-type-archive-turismo figure figcaption p{ display:none;}\n	#map{padding-top: 30px;}\n	/*single turismo*/\n	.col-md-1>.miniseparator.clear{display: none;}\n	.sfbook.sslc, .sfbook.sslc{float:left;}\n	.sslc.btn {border-radius: 100px; padding: 15px; margin: 5px; }\n\n\n}",
 			"file": "cfix.css",
-			"file_size": 25078,
-			"file_write_time": 1424726458000000,
 			"settings":
 			{
-				"buffer_size": 24965,
+				"buffer_size": 27082,
 				"line_ending": "Unix"
 			}
 		},
@@ -345,6 +367,14 @@
 			"settings":
 			{
 				"buffer_size": 10121,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "js/core.js",
+			"settings":
+			{
+				"buffer_size": 88396,
 				"line_ending": "Unix"
 			}
 		}
@@ -373,6 +403,7 @@
 	},
 	"file_history":
 	[
+		"/Users/upmedia/GitHub/santodomingo/functions.php",
 		"/Users/upmedia/GitHub/santodomingo/page-educacion.php",
 		"/Users/upmedia/GitHub/santodomingo/page-servicios.php",
 		"/Users/upmedia/GitHub/santodomingo/header.php",
@@ -499,8 +530,7 @@
 		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/bootstrap/css/bootstrap-theme.min.css",
 		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/bootstrap/css/bootstrap-theme.css.map",
 		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/functions.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/index.html",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page_banners.php"
+		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/index.html"
 	],
 	"find":
 	{
@@ -520,6 +550,13 @@
 		"case_sensitive": false,
 		"find_history":
 		[
+			"loading",
+			"contacto",
+			"noticias",
+			"background",
+			"background-image: ",
+			"background-image: url",
+			"previous.png",
 			"Documentos disponibles",
 			"echo substr",
 			"rgba",
@@ -640,14 +677,7 @@
 			".donar",
 			"donarTwee",
 			"social",
-			">\n",
-			"boxShareMin",
-			"h1.tit",
-			"bg-complementario-dos",
-			"box",
-			"boxver",
-			".sabanaBoxboxvert",
-			".sabanaBox"
+			">\n"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -665,7 +695,7 @@
 	"groups":
 	[
 		{
-			"selected": 2,
+			"selected": 8,
 			"sheets":
 			[
 				{
@@ -673,15 +703,15 @@
 					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 12498,
+						"buffer_size": 12850,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								993,
-								993
+								6515,
+								6515
 							]
 						],
 						"settings":
@@ -695,7 +725,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 625.0,
+						"translation.y": 1858.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -767,15 +797,15 @@
 					"file": "page.php",
 					"settings":
 					{
-						"buffer_size": 8669,
+						"buffer_size": 8684,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								7066,
-								7066
+								8684,
+								8663
 							]
 						],
 						"settings":
@@ -789,7 +819,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 2539.0,
+						"translation.y": 1955.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -821,7 +851,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 980.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -863,15 +893,15 @@
 					"file": "page-historia.php",
 					"settings":
 					{
-						"buffer_size": 4933,
+						"buffer_size": 2969,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								823,
-								397
+								1036,
+								1036
 							]
 						],
 						"settings":
@@ -884,7 +914,7 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 59.0,
+						"translation.y": 219.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -916,7 +946,7 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 175.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -933,7 +963,7 @@
 						"selection":
 						[
 							[
-								0,
+								39,
 								0
 							]
 						],
@@ -956,15 +986,15 @@
 					"file": "single.php",
 					"settings":
 					{
-						"buffer_size": 1853,
+						"buffer_size": 3411,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1469,
+								1469
 							]
 						],
 						"settings":
@@ -978,31 +1008,25 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 135.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
-				}
-			]
-		},
-		{
-			"selected": 0,
-			"sheets":
-			[
+				},
 				{
 					"buffer": 9,
-					"file": "style.css",
+					"file": "header.php",
 					"settings":
 					{
-						"buffer_size": 29817,
+						"buffer_size": 3663,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								29464,
-								29464
+								1388,
+								1388
 							]
 						],
 						"settings":
@@ -1010,41 +1034,36 @@
 							"incomplete_sync": null,
 							"remote_loading": false,
 							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 11182.0,
+						"translation.y": 981.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 10,
-					"file": "functions.php",
+					"file": "page-contacto.php",
 					"settings":
 					{
-						"buffer_size": 8034,
+						"buffer_size": 1434,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								1232,
+								1232
 							]
 						],
 						"settings":
 						{
+							"auto_name": "<?php",
 							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
@@ -1055,18 +1074,86 @@
 				},
 				{
 					"buffer": 11,
-					"file": "cfix.css",
+					"file": "js/shadowbox.js",
 					"settings":
 					{
-						"buffer_size": 24965,
+						"buffer_size": 37298,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								18996,
-								18996
+								28616,
+								28626
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 5406.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		},
+		{
+			"selected": 4,
+			"sheets":
+			[
+				{
+					"buffer": 12,
+					"file": "style.css",
+					"settings":
+					{
+						"buffer_size": 32009,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								5209,
+								5209
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 4608.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 13,
+					"file": "cfix.css",
+					"settings":
+					{
+						"buffer_size": 27082,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								20425,
+								20425
 							]
 						],
 						"settings":
@@ -1078,13 +1165,13 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 6311.0,
+						"translation.y": 5217.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 12,
+					"buffer": 14,
 					"file": "footer.php",
 					"settings":
 					{
@@ -1115,7 +1202,7 @@
 					"type": "text"
 				},
 				{
-					"buffer": 13,
+					"buffer": 15,
 					"file": "municipio.php",
 					"settings":
 					{
@@ -1141,6 +1228,37 @@
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 16,
+					"file": "js/core.js",
+					"settings":
+					{
+						"buffer_size": 88396,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								77307,
+								77307
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 71988.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -1176,7 +1294,7 @@
 		"cols":
 		[
 			0.0,
-			0.50567856489,
+			0.810453432459,
 			1.0
 		],
 		"rows":
@@ -1215,6 +1333,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 103.0,
+	"side_bar_width": 221.0,
 	"status_bar_visible": true
 }
