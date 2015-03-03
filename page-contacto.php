@@ -40,8 +40,6 @@ Template Name: Contacto
 	</div>
 </main>
 
-<div class="clear separator"></div>
-
 <section id="subscribe">
 	<div class="container">
 		<div class="row">

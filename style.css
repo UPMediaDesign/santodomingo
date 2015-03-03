@@ -495,6 +495,9 @@ color:#fff;
 background-color:#828282 !important;
 }
 
+.active>a.fa.fa-circle,
+.nav-tabs>li>a.fa.fa-circle {padding: 0px; font-size: 20px; border-radius: 50%; height: auto; background: none !important; border: 10px solid #828282 !important; line-height: 90%; }
+
 .nav-tabs li.active a {
 border: none !important;
 border-radius: 70px;

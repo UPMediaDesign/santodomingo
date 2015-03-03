@@ -189,28 +189,39 @@ Template Name: Municipio
                 <div role="tabpanel" class="tab-pane active" id="integrantes">
                 	<?php $integrantes = get_field('integrantes' , 235 )?>
                     <?php foreach($integrantes as $integrante):?>
-                    	<div class=" col-md-3 coninteger">
-                            <p><?php echo $integrante['integrante']?></p>
-                        </div>
+                    	
+                            <div class="col-md-4"><span class="fa fa-caret-right"></span> <p class="coninteger"><?php echo $integrante['integrante']?> - <?php echo $integrante['cargo']?></p>
+                            	<div class="clear separator border"></div>
+                            </div>
+                           
                     <?php endforeach;?>
                 </div>
                 
                 <div role="tabpanel" class="tab-pane" id="funciones">
                 	<?php $funciones = get_field('funciones' , 235 )?>
+                    
+                    <?php $fcount = 0?>
                     <?php foreach($funciones as $funcion):?>
+                    <?php $fcount++?>
                     	<div class="col-md-4 func-council">
-                        <?php echo $funcion['funcion']?>
+                            <strong><?php echo $fcount?></strong> <p><?php echo $funcion['funcion']?></p>
                         </div>
+                        <?php if($fcount %3 == 0) {echo '<div class="clear miniseparator"></div>';}?>
                     <?php endforeach;?>
+                    
                 </div>
                 
                 <div role="tabpanel" class="tab-pane" id="preguntas">
                 	<?php $preguntas = get_field('preguntas_frecuentes' , 235 )?>
+                    
+                    <?php $qcount = 0?>
                     <?php foreach($preguntas as $pregunta):?>
+                    <?php $qcount++?>
                         <div class="col-md-6 question">
+                            <span><?php echo $qcount?></span>
                             <p><?php echo $pregunta['pregunta']?></p>
                         </div>
-                        <div class="col-md-6 question">
+                        <div class="col-md-6 answer">
                             <p><?php echo $pregunta['respuesta']?></p>
                         </div>
                     <?php endforeach;?>
@@ -230,42 +241,84 @@ Template Name: Municipio
 <!-- Galeria Alcaldes -->
 <div class="clr-18">
     <section class="container">
-        <div class="col-md-12 major">
-            <h2>Galería de Alcaldes</h2>
-            <?php $alcaldes = get_posts(array('post_type' => 'alcaldes', 'numberposts' => 6)); ?>
-            <?php $countalcaldes = 0 ?>
-            <?php foreach ($alcaldes as $alcalde): ?>
-            <?php $countalcaldes++ ?>
+    	<div class="col-md-12 major">
+        
+        	<h2>Galería de Alcaldes</h2>
+            
+                <div role="tabpanel">
+					
+                    <div class="tab-content">
+                    
+                        <?php $alcaldes = get_posts(array('post_type' => 'alcaldes', 'numberposts' => -1)); ?>
 
-            <figure class="col-md-2 col-esp major">
-                <?php echo get_the_post_thumbnail( $alcalde->ID ) ?>
-
-                <figcaption>
-                   <h3><?php echo $alcalde->post_title ?></h3>
-                    <p><?php echo $alcalde->post_content ?></p> 
-                </figcaption>
-
-            </figure>
-                                    
-            <?php endforeach?>
-        </div>
-        <div class="clear separator"></div>
+                        <?php $acount = 0 ?>
+                        <?php foreach ($alcaldes as $alcalde): ?>
+                        <?php $acount++ ?>
+                        
+                        <?php if($acount == 1){?>
+                        <div role="tabpanel" class="tab-pane active" id="alcaldes-<?php echo $acount?>">
+                      	<?php }?>
+                        
+                            <figure class="col-md-2 col-esp major">
+                                <?php echo get_the_post_thumbnail( $alcalde->ID ) ?>
+                                <figcaption>
+                                   <h3><?php echo $alcalde->post_title ?></h3>
+                                    <p><?php echo $alcalde->post_content ?></p> 
+                                </figcaption>
+                            </figure>
+						
+                        <?php if($acount % 6 == 0){?>
+                        	</div><div role="tabpanel" class="tab-pane" id="alcaldes-<?php echo $acount?>">
+                        <?php }?>
+                        <?php endforeach?>
+                       	</div>
+						<div class="clear separator"></div>
+                            <ul class="nav nav-tabs" role="tablist">
+                            
+                            <?php $btcount = 0?>
+                            
+                            
+                            <?php foreach ($alcaldes as $alc):?>
+                            <?php $btcount++?>
+                            	<?php if($btcount ==1){?>
+                            		<li role="presentation" class="active"><a class="fa fa-circle" href="#alcaldes-1" aria-controls="home" role="tab" data-toggle="tab"></a></li>
+                            	<?php }?>
+                            	
+    							<?php if($btcount % 6 ==0){?>
+                                <li role="presentation" class="<?php if($btcount ==1){ echo 'active';}?>"><a class="fa fa-circle" href="#alcaldes-<?php echo $btcount?>" aria-controls="home" role="tab" data-toggle="tab"></a></li>
+                                <?php }?>
+                            
+    						<?php endforeach;?>
+                            
+                            </ul>
+                    </div>
+            </div>      
     </section>
 </div>
+
+
+
 
 <!-- Tabla de Staff -->
 <section class="container">
     <div class="row">
-        <div class="col-md-12">
-            <?php the_field('contenido_staff') ?>
-
-            <!-- Inicia contenido de Staff -->
-            <div class="col-md-6">
-                <?php the_field('tabla_izquierda') ?>
-            </div>
-            <div class="col-md-6">
-                <?php the_field('tabla_derecha') ?>
-            </div>
+        <div class="col-md-12 staff">
+            <h2>Staff</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam id dui ligula. </p>
+           	<div role="tabpanel"> 	
+            	<?php $staffs = get_posts(array('post_type' => 'staff', 'numberposts' => -1)); ?>
+                <?php $countstaffs = 0 ?>
+                <?php foreach ($staffs as $staff): ?>
+                <?php $countstaffs++ ?>
+					<div class="col-md-6 staff">
+                    	<span class="fa fa-chevron-circle-right"></span>&nbsp;
+                        <p class="datestaff"><strong><?php echo $staff->post_title ?></strong></p>&nbsp;
+                        <p class="datestaff"><em><?php echo $staff->post_content ?></em></p>&nbsp;
+                        <a href="mailto:<?php echo $staff->post_excerpt ?>" class="pull-right"><span class="fa fa-envelope-o"></span></a>
+                        <div class="clear border separator"></div>
+               		</div>                        
+                <?php endforeach?>
+          	</div>  
             <!-- Finaliza contenido de Staff -->
 
         </div>    

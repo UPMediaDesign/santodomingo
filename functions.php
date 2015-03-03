@@ -122,6 +122,25 @@ function turismo_register() {
     flush_rewrite_rules();
 }
 
+// Para Integrantes del consejo - Carlos
+add_action('init', 'integrantes_register');
+function integrantes_register() {
+    $args = array(
+        'label' => 'Integrantes',
+        'singular_label' => 'Integrante',
+        'public' => true,
+    'menu_position' => 15, 
+        '_builtin' => false,
+        'capability_type' => 'post',
+    'has_archive' => false,
+        'hierarchical' => false,
+        'rewrite' => array( 'slug' => 'integrantes'),
+        'supports' => array('title', 'editor' , 'excerpt' , 'thumbnail' )
+    );
+    register_post_type('integrantes', $args);
+    flush_rewrite_rules();
+}
+
 
 
 

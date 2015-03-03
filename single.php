@@ -30,9 +30,12 @@
             	<?php echo apply_filters('the_content' , $post->post_content)?>
 
                 <a class="twitter-share-button" href="https://twitter.com/share" data-via="twitterdev"> Tweet </a>
-                  <script>
-                  window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
-                  </script>
+
+                <div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-layout="button_count"></div>
+
+                <div id="fb-root"></div>
+
+                <div class="clear separator"></div>
 				
 				<?php $gallery = get_field('slide_gallery') ?>
                 <?php if($gallery){?>

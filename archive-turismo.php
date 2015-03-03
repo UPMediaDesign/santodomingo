@@ -3,48 +3,35 @@
 <?php get_template_part('searchbar')?>
 
 <script type="text/javascript">
+
+
 var pins = [
-	<?php foreach($pins as $pin):?>
-  	['<?php echo $pin['ubicacion']['address']; ?>', <?php echo $pin['ubicacion']['lat']; ?>, <?php echo $pin['ubicacion']['lng']; ?>, '<?php echo $pin['tipo']?>' , '<?php echo $pin['info']?>' ,4],
-  	<?php endforeach;?>
+
+<?php foreach($posts as $pinz):?>
+	<?php $pins = get_field('ubicacion' , $pinz->ID)?>
+	['<?php echo $pins['address']; ?>', <?php echo $pins['lat']; ?>, <?php echo $pins['lng']; ?> ,4,'<?php $tipo = wp_get_post_terms($pinz->ID , 'tipo'); echo $tipo[0]->slug?>' , '<?php echo get_permalink($pinz->ID)?>' , '<?php echo $pinz->post_title?>'],
+		
+	<?php endforeach;?>
+
 ];
 function setMarkers(map, locations) {
-  //map.setCenter(new google.maps.LatLng(-33.634987, -71.630344));
-
-  var image = {
-    url: 'https://google-developers.appspot.com/maps/documentation/javascript/examples/full/images/beachflag.png',
-    // This marker is 20 pixels wide by 32 pixels tall.
-    size: new google.maps.Size(20, 32),
-    // The origin for this image is 0,0.
-    origin: new google.maps.Point(0,0),
-    // The anchor for this image is the base of the flagpole at 0,32.
-    anchor: new google.maps.Point(0, 32)
-  };
-  var marker = new google.maps.Marker({
-      position: myLatlng,
-      map: map,
-      title: 'Hello World!'
-  });
-  var shape = {
-      coords: [1, 1, 1, 20, 18, 20, 18 , 1],
-      type: 'poly'
-  };
-
+  map.setCenter(new google.maps.LatLng(-33.634987, -71.630344));
+	
   for (var i = 0; i < locations.length; i++) {
     var pin = locations[i];
     var myLatLng = new google.maps.LatLng(pin[1], pin[2]);
     var marker = new google.maps.Marker({
         position: myLatLng,
         map: map,
-        icon: image,
-        shape: shape,
+        icon: '<?php echo get_bloginfo('template_directory')?>/images/'+pin[4]+'.png',
+        //shape: shape,
         title: pin[0],
-        zIndex: pin[5]
+        zIndex: pin[3]
     });
 
     
 	
-	var content = '<img src="<?php bloginfo('template_directory')?>/images/logo.png" height="50" alt="" /><h4>'+pin[0]+'</h4><h5>'+pin[3]+'</h5><p>'+pin[4]+'</p>';
+	var content = '<img src="<?php bloginfo('template_directory')?>/images/logo.png" height="50" alt="" /><div class="clear miniseparator"></div><h3>'+pin[6]+'</h3><h5>'+pin[0]+'</h5><div class="clear miniseparator"></div><a href="'+pin[5]+'" class="btn btn-block btn-success">Ver Más info <span class="fa fa-share"></span></a>';
 	var infowindow = new google.maps.InfoWindow( {maxWidth: 320} )
 	
 	google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 
@@ -71,8 +58,13 @@ google.maps.event.addDomListener(window, 'load', initialize);
                   <span class="fa fa-caret-down"></span>
                 </button>
                 <ul class="dropdown-menu" role="menu">
-                  <li><a href="#">Texto extendido desde un Lorem Ipsum</a></li>
-                  <li><a href="#">Dropdown link</a></li>
+                
+                
+               		<?php $tipos = get_terms('tipo')?>
+					<?php foreach($tipos as $tipo):?>
+                        <li><a href="<?php echo get_post_type_archive_link('turismo')?>/?tipo=<?php echo $tipo->slug?>"><?php echo $tipo->name?></a></li>
+                    <?php endforeach;?>
+                
                 </ul>
             </div>
 			<div class="col-md-2 ">

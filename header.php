@@ -17,7 +17,7 @@
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link rel="stylesheet" href="<?php bloginfo('stylesheet_url')?>?ver=3.8.1" />
 <link rel="stylesheet" href="<?php bloginfo('template_directory')?>/cfix.css" />
-<link rel="stylesheet" href="<?php bloginfo('template_directory')?>/css/shadowbox.css" />
+
 
 <!-- FontAwesome -->
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
@@ -83,11 +83,29 @@ jQuery(document).ready(function($) {
 	google.maps.event.addListener(map, 'click', function(event){
 		map.setOptions({draggable: true});
 	});
-	var p = data.results[0].geometry.location
+	//var p = data.results[0].geometry.location
 	
 	setMarkers(map, pins);
   }
 </script>
+
+<!-- RRSS Shares -->
+<!-- Twitter -->
+<script>
+    window.twttr=(function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],t=window.twttr||{};if(d.getElementById(id))return;js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);t._e=[];t.ready=function(f){t._e.push(f);};return t;}(document,"script","twitter-wjs"));
+</script>
+
+<!-- Facebook Share script -->
+<script>
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.0";
+            fjs.parentNode.insertBefore(js, fjs);
+        }(document, 'script', 'facebook-jssdk'));
+</script>
+
 
 </head>
 
