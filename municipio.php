@@ -212,20 +212,49 @@ Template Name: Municipio
                 </div>
                 
                 <div role="tabpanel" class="tab-pane" id="preguntas">
+              		<div class="row">
                 	<?php $preguntas = get_field('preguntas_frecuentes' , 235 )?>
-                    
                     <?php $qcount = 0?>
                     <?php foreach($preguntas as $pregunta):?>
                     <?php $qcount++?>
-                        <div class="col-md-6 question">
-                            <span><?php echo $qcount?></span>
-                            <p><?php echo $pregunta['pregunta']?></p>
+                    
+                        <div class="col-md-3 question">
+                        	<div class="well">
+                            <span class="badge"><?php echo $qcount?></span>
+                            <div class="clear miniseparator"></div>
+                            <h4><?php echo $pregunta['pregunta']?></h4>
+                        
+                            <div class="answer">
+                            <p><?php echo substr($pregunta['respuesta'] , 0, 95)?>...</p>
+                            </div>
+                            <button type="button" class="btn btn-default btn-xs pull-right" data-toggle="modal" data-target="#myModal-<?php echo $qcount?>">
+                                Ver Más
+                            </button>
+                            <div class="clear"></div>
+                             <div class="modal fade" id="myModal-<?php echo $qcount?>" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                              <div class="modal-dialog">
+                                <div class="modal-content">
+                                  <div class="modal-header">
+                                    <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                                    <h4 class="modal-title" id="myModalLabel"><?php echo $pregunta['pregunta']?></h4>
+                                  </div>
+                                  <div class="modal-body">
+                                   <p><?php echo $pregunta['respuesta']?></p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+                            </div>
+
                         </div>
-                        <div class="col-md-6 answer">
-                            <p><?php echo $pregunta['respuesta']?></p>
-                        </div>
+                        
+                        <?php if($qcount % 4 == 0){echo '<div class="clear"></div>';}?>
+                        
                     <?php endforeach;?>
+					</div>
+
                 </div>
+
               </div>
             
             </div>

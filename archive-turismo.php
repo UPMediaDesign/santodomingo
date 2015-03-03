@@ -31,7 +31,7 @@ function setMarkers(map, locations) {
 
     
 	
-	var content = '<img src="<?php bloginfo('template_directory')?>/images/logo.png" height="50" alt="" /><div class="clear miniseparator"></div><h3>'+pin[6]+'</h3><h5>'+pin[0]+'</h5><div class="clear miniseparator"></div><a href="'+pin[5]+'" class="btn btn-block btn-success">Ver Más info <span class="fa fa-share"></span></a>';
+	var content = '<img src="<?php bloginfo('template_directory')?>/images/logo.png" height="50" alt="" /><div class="clear miniseparator"></div><h3 class="pincontent">'+pin[6]+'</h3><h5 class="">'+pin[0]+'</h5><div class="clear miniseparator"></div><a href="'+pin[5]+'" class="btn btn-block btn-success">Ver Más info <span class="fa fa-share"></span></a>';
 	var infowindow = new google.maps.InfoWindow( {maxWidth: 320} )
 	
 	google.maps.event.addListener(marker,'click', (function(marker,content,infowindow){ 

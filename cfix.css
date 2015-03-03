@@ -107,6 +107,8 @@ transition: all 0.5s ease-in-out;}
 /* Encabezado Contenido*/
 main#educacion{margin-top:50px;}
 figcaption.teach{text-align:left; background:rgba(86, 163, 42, 0.6); padding:10px 10px;}
+figcaption.teach a{font-family: 'Pluto'; font-size: 25px; font-weight: 900; color: #fff; padding: 15px 0 5px; line-height:270%;}
+figcaption.teach a:hover{color:#155980; text-decoration: none;}
 figcaption.teach p{font-family: 'Pluto'; font-size: 25px; font-weight: 900; color: #fff; padding: 15px 0 5px;}
 .teach img{background: #3a7816; border-radius: 50%; width: 100%; height: auto; max-width: 70px; padding: 10px; float: left; margin-right:10px;}
 
@@ -147,13 +149,13 @@ li.col-md-4.contab a{background: #fff !important; color: #003252 !important; fon
 
 .coninteger{text-align:left; font-family:Georgia, "Times New Roman", Times, serif; font-size:15px !important; line-height: 140%;}
 
-.question p{text-align: left; font-family: "Times New Roman", Times, serif; font-size: 16px; line-height: 140%; font-weight: 600; padding-top:10px;}
-.answer p{text-align: left; font-family: "Times New Roman", Times, serif; font-size: 16px; line-height: 140%; font-style: italic; padding-top:10px;}
-
+.question p{text-align: center; font-family: "Times New Roman", Times, serif; font-size: 16px; line-height: 140%; font-weight: 600; padding-top:10px;}
+.answer p{text-align: left; font-family: "Times New Roman", Times, serif; font-size: 16px; line-height: 140%; font-style: normal; padding-top: 10px; font-weight: 300; color:#868686;}
 span.fa.fa-caret-right{background: #1970a1; border-radius: 50%; width: 16px; height: 16px; color: #fff; padding: 1px 6px; font-size: 14px; float: left; margin-right: 5px;}
 
 .question, .answer{margin-bottom:15px;}
-.question span {background: #1970a1; border-radius: 50%; padding: 10px 18px; font-size: 16px; font-weight: 900; font-family: 'Pluto'; color: #fff; font-style: normal !important; text-align: left; float: left; display: block; margin-right: 15px; clear: both; }
+.question span { background: #1970a1; border-radius: 50%; padding: 12px 15px; font-size: 16px; font-weight: 900; font-family: 'Pluto'; color: #fff; font-style: normal !important; float: none; display: block; margin-right: 15px; clear: both; margin: 0 auto; width: 45px; text-align: center; }
+.question span[aria-hidden="true"]{font-size: 30px; padding: 0px 8px; font-weight: 300; width: 30px; height: 30px;}
 
 /* Galeria Alcaldes */
 .megacontainer.clr-18{display:inline-block;}
@@ -175,6 +177,9 @@ ol.carousel-indicators.page{position: absolute; top: 145px; right: 40px; z-index
 .carousel-indicators.page li {background: #fff; border: 6px solid #a5a5a5; width: 25px; height: 25px; border-radius: 50%; margin:0px;}
 .item div.col-md-3.col-xs-3{padding: 0 5px;}
 
+/* Modal para Preguntas Frecuentes */
+button.btn.btn-primary.btn-lg{margin: 0 auto; display: block; background: none; border: none; font-family: 'Pluto'; color: #428bca; text-decoration: none; padding-top: 0;}
+.modal-dialog {width: 600px; margin: 145px auto; }
 
 /* Seguridad Ciudadana */
 h3.service{text-align: center; border-bottom: 1px solid #a5a5a5; font-size: 20px; height: 45px; margin-bottom: 35px; }
@@ -268,6 +273,7 @@ transition: all 0.5s ease-in-out;}
 
 span.fa.fa-caret-down{border: 2px solid #fff; padding: 2px 5px; border-radius: 15px;}
 .link a{background: #fff; padding: 5px 10px; -webkit-border-top-left-radius: 50px; -moz-border-radius-topleft: 50px; border-top-left-radius: 50px; float: right; text-align: left; color: #155980; font-size: 25px; height: 30px; width: 30px}
+h3.pincontent{font-weight: 900; color: #155980; margin-top: 0; font-size:20px;}
 
 /* Acotacion en los diferentes tipos de columnas */
 .col-md-6.col-esp >figcaption> div.link a{position: absolute; left: 95%; bottom: 0;}
