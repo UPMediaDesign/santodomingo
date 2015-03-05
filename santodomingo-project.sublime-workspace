@@ -4,40 +4,76 @@
 		"selected_items":
 		[
 			[
-				"teach",
-				"teachnews"
+				"text",
+				"text-decoration"
+			],
+			[
+				"padding",
+				"padding-bottom"
+			],
+			[
+				"font",
+				"font-style"
+			],
+			[
+				"p",
+				"panel-collapse"
+			],
+			[
+				"get_the",
+				"get_the_excerpt"
+			],
+			[
+				"count",
+				"countalcaldes"
+			],
+			[
+				"template",
+				"template_directory"
+			],
+			[
+				"im",
+				"imcount"
 			],
 			[
 				"margin",
 				"margin-right"
 			],
 			[
-				"font",
-				"font-family"
+				"rgb",
+				"rgba()"
 			],
 			[
-				"col",
-				"col-md-4"
+				"pad",
+				"padding"
 			],
 			[
-				"padd",
-				"padding-left"
+				"nav",
+				"navbar-brand"
+			],
+			[
+				"btn",
+				"btn-default"
+			],
+			[
+				"aside",
+				"asidemenu"
 			],
 			[
 				"var",
 				"var_dump"
 			],
 			[
-				"health",
-				"health-prefoot"
+				"col",
+				"col-md-2"
 			],
 			[
-				"rgb",
-				"rgba()"
+				"bac",
+				"background-color"
 			],
 			[
 				"st",
-				"strong	Tag"
+				"staff"
 			],
 			[
 				"h",
@@ -50,10 +86,6 @@
 			[
 				"conten",
 				"contenedor-footer"
-			],
-			[
-				"padding",
-				"padding-top"
 			],
 			[
 				"paddin",
@@ -78,10 +110,6 @@
 			[
 				"se",
 				"section	Tag"
-			],
-			[
-				"btn",
-				"btn-primary"
 			],
 			[
 				"hoe",
@@ -110,10 +138,6 @@
 			[
 				"back",
 				"background-color"
-			],
-			[
-				"pad",
-				"padding-bottom"
 			],
 			[
 				"te",
@@ -148,8 +172,8 @@
 				"max-height"
 			],
 			[
-				"bac",
-				"background-size"
+				"padd",
+				"padding"
 			],
 			[
 				"no",
@@ -204,10 +228,6 @@
 				"border-top"
 			],
 			[
-				"text",
-				"text-align"
-			],
-			[
 				"ma",
 				"margin"
 			],
@@ -232,74 +252,10 @@
 	"buffers":
 	[
 		{
-			"file": "page.php",
-			"settings":
-			{
-				"buffer_size": 8359,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "municipio.php",
-			"settings":
-			{
-				"buffer_size": 1316,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "single.php",
-			"settings":
-			{
-				"buffer_size": 1853,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "page-salud.php",
-			"settings":
-			{
-				"buffer_size": 2797,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "page-educacion.php",
-			"settings":
-			{
-				"buffer_size": 2373,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "header.php",
-			"settings":
-			{
-				"buffer_size": 3450,
-				"line_ending": "Unix"
-			}
-		},
-		{
 			"file": "index.php",
 			"settings":
 			{
-				"buffer_size": 11018,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "cfix.css",
-			"settings":
-			{
-				"buffer_size": 5824,
-				"line_ending": "Unix"
-			}
-		},
-		{
-			"file": "style.css",
-			"settings":
-			{
-				"buffer_size": 28307,
+				"buffer_size": 12850,
 				"line_ending": "Unix"
 			}
 		},
@@ -307,7 +263,63 @@
 			"file": "functions.php",
 			"settings":
 			{
-				"buffer_size": 8034,
+				"buffer_size": 8768,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "header.php",
+			"settings":
+			{
+				"buffer_size": 4358,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "page-educacion.php",
+			"settings":
+			{
+				"buffer_size": 2366,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "searchbar.php",
+			"settings":
+			{
+				"buffer_size": 3485,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "style.css",
+			"settings":
+			{
+				"buffer_size": 32216,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "cfix.css",
+			"settings":
+			{
+				"buffer_size": 29060,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "footer.php",
+			"settings":
+			{
+				"buffer_size": 972,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "municipio.php",
+			"settings":
+			{
+				"buffer_size": 14883,
 				"line_ending": "Unix"
 			}
 		}
@@ -336,15 +348,24 @@
 	},
 	"file_history":
 	[
-		"/Volumes/santodomingo/functions.php",
-		"/Volumes/santodomingo/page-161.php",
-		"/Users/upmedia/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings",
-		"/Volumes/santodomingo/header.php",
-		"/Volumes/santodomingo/archive-turismo.php",
-		"/Volumes/santodomingo/style.css",
-		"/Volumes/santodomingo/index.php",
-		"/Volumes/santodomingo/municipio.php",
 		"/Users/upmedia/GitHub/santodomingo/municipio.php",
+		"/Users/upmedia/GitHub/santodomingo/archive-turismo.php",
+		"/Users/upmedia/GitHub/santodomingo/header.php",
+		"/Users/upmedia/GitHub/santodomingo/page.php",
+		"/Users/upmedia/GitHub/santodomingo/page-historia.php",
+		"/Users/upmedia/GitHub/santodomingo/functions.php",
+		"/Users/upmedia/GitHub/santodomingo/page-contacto.php",
+		"/Users/upmedia/GitHub/santodomingo/archive-documentos.php",
+		"/Users/upmedia/GitHub/santodomingo/js/core.js",
+		"/Users/upmedia/GitHub/santodomingo/js/shadowbox.js",
+		"/Users/upmedia/GitHub/santodomingo/category.php",
+		"/Users/upmedia/GitHub/santodomingo/page-servicios.php",
+		"/Users/upmedia/GitHub/santodomingo/single.php",
+		"/Users/upmedia/GitHub/santodomingo/page-educacion.php",
+		"/Users/upmedia/GitHub/santodomingo/searchbar.php",
+		"/Users/upmedia/GitHub/santodomingo/oirs.php",
+		"/Users/upmedia/GitHub/santodomingo/cfix.css",
+		"/Volumes/santodomingo/cfix.css",
 		"/Users/upmedia/Desktop/Sitio Alimentate Sano/columna_44.php",
 		"/Users/upmedia/Desktop/Sitio Alimentate Sano/index.php",
 		"/Users/upmedia/Desktop/Sitio Alimentate Sano/receta_de_la_semana_53.php",
@@ -454,16 +475,7 @@
 		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/category-noticias.php",
 		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/index.php",
 		"/Users/upmedia/Desktop/programagobierno_WP/wp-content/themes/jt-theme/functions.php",
-		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/js/jquery.bxslider.js",
-		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/js/jquery.easing.1.3.js",
-		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/bootstrap/css/bootstrap-theme.min.css",
-		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/bootstrap/css/bootstrap-theme.css.map",
-		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/functions.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/index.html",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/page_banners.php",
-		"/Users/upmedia/Desktop/SITIOS/UPMEDIA/public_html/regcom/wp-content/themes/front/page-actividades.php",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/style.css",
-		"/private/var/folders/qt/8cc7xcts4cjccztx7wylwbjh0000gn/T/fz3temp-1/footer.php"
+		"/Users/upmedia/Desktop/IRAM_WP/wp-content/themes/iram/js/jquery.bxslider.js"
 	],
 	"find":
 	{
@@ -471,9 +483,10 @@
 	},
 	"find_in_files":
 	{
-		"height": 0.0,
+		"height": 93.0,
 		"where_history":
 		[
+			"/Users/upmedia/GitHub/santodomingo",
 			"<wp-content>,/Users/upmedia/GitHub/ACTO_WP/wp-content/themes/mystile"
 		]
 	},
@@ -482,11 +495,41 @@
 		"case_sensitive": false,
 		"find_history":
 		[
-			"padding:0",
-			";\n",
-			"icon",
-			"class=\"megacontainer\"",
-			"menu-categorias",
+			"separator",
+			"minseparator",
+			"min-separator",
+			"substr",
+			"consejo",
+			"= get_posts(array('post_type' =>",
+			"<?php $staffs = get_posts(array('post_type' => ",
+			"staff",
+			"query_post",
+			"get_query_post",
+			"col-md-2 col-xs-4",
+			"loading",
+			"contacto",
+			"noticias",
+			"background",
+			"background-image: ",
+			"background-image: url",
+			"previous.png",
+			"Documentos disponibles",
+			"echo substr",
+			"rgba",
+			"searchh",
+			"wp-paginate",
+			"map",
+			"col-md-2 col-md-offset-8",
+			"id=\"btnz\"",
+			"<div class=\"col-md-9\">\n            	                                                	<article class=\"col-md-6\">",
+			"asidemenu",
+			"panel panel-default",
+			"fa-cloud ",
+			"h2",
+			"CONCEJO MUNICIPAL",
+			"#3599cb",
+			"3599cb",
+			"get_field",
 			"recetas",
 			"navidena",
 			"mCustomScrollBox mCS-light",
@@ -579,37 +622,7 @@
 			".slider",
 			"bin",
 			"a.nav",
-			"analytics",
-			".lacampana p",
-			"#backslides",
-			"frameVideo",
-			".donarTweet",
-			"slides-container",
-			"backslides",
-			".contentLeft",
-			".donar",
-			"donarTwee",
-			"social",
-			">\n",
-			"boxShareMin",
-			"h1.tit",
-			"bg-complementario-dos",
-			"box",
-			"boxver",
-			".sabanaBoxboxvert",
-			".sabanaBox",
-			"\n	display:block;",
-			"wrapper",
-			"vertical",
-			"slide",
-			"subnav",
-			"heade",
-			".mainNav ul",
-			".mainNav ul li a",
-			"ventajaVertical",
-			".boxSoftware",
-			"        <?",
-			".ventajaBox"
+			"analytics"
 		],
 		"highlight": true,
 		"in_selection": false,
@@ -627,23 +640,23 @@
 	"groups":
 	[
 		{
-			"selected": 1,
+			"selected": 4,
 			"sheets":
 			[
 				{
 					"buffer": 0,
-					"file": "page.php",
+					"file": "index.php",
 					"settings":
 					{
-						"buffer_size": 8359,
+						"buffer_size": 12850,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								4410,
-								4419
+								941,
+								993
 							]
 						],
 						"settings":
@@ -657,55 +670,25 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 488.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "municipio.php",
+					"file": "functions.php",
 					"settings":
 					{
-						"buffer_size": 1316,
+						"buffer_size": 8768,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1218,
-								1218
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 2,
-					"file": "single.php",
-					"settings":
-					{
-						"buffer_size": 1853,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								0,
-								0
+								3830,
+								3830
 							]
 						],
 						"settings":
@@ -718,25 +701,25 @@
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 1421.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 3,
-					"file": "page-salud.php",
+					"buffer": 2,
+					"file": "header.php",
 					"settings":
 					{
-						"buffer_size": 2797,
+						"buffer_size": 4358,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2567,
-								2567
+								3880,
+								3880
 							]
 						],
 						"settings":
@@ -750,25 +733,25 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 259.0,
+						"translation.y": 218.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 4,
+					"buffer": 3,
 					"file": "page-educacion.php",
 					"settings":
 					{
-						"buffer_size": 2373,
+						"buffer_size": 2366,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2203,
-								2203
+								774,
+								774
 							]
 						],
 						"settings":
@@ -780,54 +763,25 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 0.0,
+						"translation.y": 89.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 5,
-					"file": "header.php",
+					"buffer": 4,
+					"file": "searchbar.php",
 					"settings":
 					{
-						"buffer_size": 3450,
+						"buffer_size": 3485,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								2393,
-								2393
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/PHP/PHP.tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 707.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 6,
-					"file": "index.php",
-					"settings":
-					{
-						"buffer_size": 11018,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1672,
-								62
+								2177,
+								2177
 							]
 						],
 						"settings":
@@ -849,53 +803,23 @@
 			]
 		},
 		{
-			"selected": 0,
+			"selected": 1,
 			"sheets":
 			[
 				{
-					"buffer": 7,
-					"file": "cfix.css",
-					"settings":
-					{
-						"buffer_size": 5824,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								5398,
-								5398
-							]
-						],
-						"settings":
-						{
-							"incomplete_sync": null,
-							"remote_loading": false,
-							"synced": false,
-							"syntax": "Packages/CSS/CSS.tmLanguage",
-							"word_wrap": true
-						},
-						"translation.x": 0.0,
-						"translation.y": 1367.0,
-						"zoom_level": 1.0
-					},
-					"type": "text"
-				},
-				{
-					"buffer": 8,
+					"buffer": 5,
 					"file": "style.css",
 					"settings":
 					{
-						"buffer_size": 28307,
+						"buffer_size": 32216,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								24941,
+								24941
 							]
 						],
 						"settings":
@@ -909,25 +833,55 @@
 							"word_wrap": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 3401.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
 				},
 				{
-					"buffer": 9,
-					"file": "functions.php",
+					"buffer": 6,
+					"file": "cfix.css",
 					"settings":
 					{
-						"buffer_size": 8034,
+						"buffer_size": 29060,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								0,
-								0
+								8361,
+								8361
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/CSS/CSS.tmLanguage",
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 2506.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "footer.php",
+					"settings":
+					{
+						"buffer_size": 972,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								775,
+								775
 							]
 						],
 						"settings":
@@ -936,11 +890,43 @@
 							"remote_loading": false,
 							"synced": false,
 							"syntax": "Packages/PHP/PHP.tmLanguage",
-							"tab_size": 2,
+							"tab_size": 4,
 							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 8,
+					"file": "municipio.php",
+					"settings":
+					{
+						"buffer_size": 14883,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								9715,
+								9715
+							]
+						],
+						"settings":
+						{
+							"incomplete_sync": null,
+							"remote_loading": false,
+							"synced": false,
+							"syntax": "Packages/PHP/PHP.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true,
+							"word_wrap": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 3671.0,
 						"zoom_level": 1.0
 					},
 					"type": "text"
@@ -976,7 +962,7 @@
 		"cols":
 		[
 			0.0,
-			0.520780106009,
+			0.485607047171,
 			1.0
 		],
 		"rows":
@@ -1015,6 +1001,6 @@
 	"show_open_files": true,
 	"show_tabs": true,
 	"side_bar_visible": true,
-	"side_bar_width": 279.0,
+	"side_bar_width": 221.0,
 	"status_bar_visible": true
 }

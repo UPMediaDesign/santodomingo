@@ -21,7 +21,7 @@ Template Name: Educación
                   <a href="<?php echo get_permalink($teachs->ID) ?>"><?php echo get_the_post_thumbnail($teachs->ID , 'wider' , array('class' => 'img-responsive')); ?></a>
                   <figcaption class="teach">
                     <img src="<?php bloginfo('template_directory')?>/images/teach.png" alt="">
-                    <a href="<?php echo get_permalink($teachs->ID) ?>"><p><?php echo $teachs->post_title ?></p></a>
+                    <a href="<?php echo get_permalink($teachs->ID) ?>"><?php echo $teachs->post_title ?></a>
                   </figcaption>
                 
             </figure>
@@ -35,7 +35,7 @@ Template Name: Educación
 		<div class="row">
 			<!-- Pestañas de Información -->
 			<div class="col-md-9">
-				<div role="tabpanel">
+				<div role="tabpanell">
 
 					  	<?php wp_nav_menu( array( 'container' => 'none', 'menu_class' => 'nav nav-tabs col-md-12'  , 'menu' => 'educacion' ) ); ?>
 
