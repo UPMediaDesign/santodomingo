@@ -154,6 +154,7 @@ main .container p , main .megacontainer p{font-family:Georgia, "Times New Roman"
 @media screen and (max-width:767px){ 
 	.desktop{ display: none}
 	.mobile{ display: inline-block}
+    .hide-on-mobile{display:none;}
 }
 
 .col-md-20{ width:20%; float: left}
@@ -183,7 +184,7 @@ h3{ font-weight:900; color:#155980}
 h4{ font-family:Georgia, "Times New Roman", Times, serif}
 h4, .h4, h5, .h5, h6, .h6 { margin-top:0px;}
 
-.subtitle{ font-family:Georgia, "Times New Roman", Times, serif; font-size:18px; font-style:italic}
+.subtitle{ font-family:Georgia, "Times New Roman", Times, serif !important; color:#323232; font-size:15px; font-style:italic}
 
 .skw{ -moz-transform: skewX(-15deg);-webkit-transform: skewX(-15deg);-o-transform: skewX(-15deg);-ms-transform: skewX(-15deg);transform: skewX(-15deg); }
 .inskw{ -moz-transform: skewX(15deg);-webkit-transform: skewX(15deg);-o-transform: skewX(15deg);-ms-transform: skewX(15deg);transform: skewX(15deg); }
@@ -224,6 +225,44 @@ presupuesto:	#4e5b91s
 .clr-15 , .clr-dideco					{ background-color:#008e82}
 .clr-16 , .clr-prodesal					{ background-color:#77ddd7}
 .clr-17 , .clr-presupuesto-y-cuenta-publica	{ background-color:#4e5b91}
+
+
+/* Iconos del clima */
+
+
+
+/* Estilos para Shadowbox */
+#sb-title-inner,#sb-info-inner,#sb-loading-inner,div.sb-message{font-family:"HelveticaNeue-Light","Helvetica Neue",Helvetica,Arial,sans-serif;font-weight:200;color:#fff;}
+#sb-container{position:fixed;margin:0;padding:0;top:0;left:0;z-index:9999;text-align:left;visibility:hidden;display:none;}
+#sb-overlay{position:relative;height:100%;width:100%;}
+#sb-wrapper{position:absolute;visibility:hidden;width:100px;}
+#sb-wrapper-inner{position:relative;border:1px solid #303030;overflow:hidden;height:100px;}
+#sb-body{position:relative;height:100%;}
+#sb-body-inner{position:absolute;height:100%;width:100%;}
+#sb-player.html{height:100%;overflow:auto;}
+#sb-body img{border:none;}
+#sb-loading{position:relative;height:100%;}
+#sb-loading-inner{position:absolute;font-size:14px;line-height:24px;height:24px;top:50%;margin-top:-12px;width:100%;text-align:center;}
+#sb-loading-inner span{background:url(loading.gif) no-repeat;padding-left:34px;display:inline-block;}
+#sb-body,#sb-loading{background-color:#060606;}
+#sb-title,#sb-info{position:relative;margin:0;padding:0;overflow:hidden; bottom: 445px; padding:0 15px;}
+#sb-title,#sb-title-inner{height:26px;line-height:26px;}
+#sb-title-inner{font-size:16px;}
+#sb-info,#sb-info-inner{height:20px;line-height:20px;}
+#sb-info-inner{font-size:12px;}
+#sb-nav{float:right;height:16px;padding:2px 0;width:45%;}
+#sb-nav a{display:block;float:right;height:16px;width:16px;margin-left:3px;cursor:pointer;background-repeat:no-repeat;}
+#sb-nav-close{background-image:url(close.png);}
+#sb-nav-next{background-image:url(next.png);}
+#sb-nav-previous{background-image:url(previous.png);}
+#sb-nav-play{background-image:url(play.png);}
+#sb-nav-pause{background-image:url(pause.png);}
+#sb-counter{float:left;width:45%;}
+#sb-counter a{padding:0 4px 0 0;text-decoration:none;cursor:pointer;color:#fff;}
+#sb-counter a.sb-counter-current{text-decoration:underline;}
+div.sb-message{font-size:12px;padding:10px;text-align:center;}
+div.sb-message a:link,div.sb-message a:visited{color:#fff;text-decoration:underline;}
+/* Fin estilos shadowbox */
 
 /*******************************************************************************************/
 /*************************************HEADER************************************************/
@@ -307,9 +346,10 @@ presupuesto:	#4e5b91s
 /*************************************Bxslider************************************************/
 /*******************************************************************************************/
 
-section#slider{ height:500px;  margin-top:175px; background-color:#1970a1;}
+section#slider{ /*height:500px;*/  margin-top:175px; background-color:#1970a1;}
 .home section#slider{margin-top:115px; height:445px; }
-.parent-pageid-89 section#slider , .single section#slider , .category section#slider{ height:300px;  margin-top:175px; background-color:#1970a1;}
+.parent-pageid-89 section#slider , .single section#slider , .category section#slider { height:300px;  margin-top:175px; background-color:#1970a1;}
+.post-type-archive-documentos section#slider{ height:345px;  margin-top:175px; background-color:#1970a1;}
 section#slider .item{ background-position: top right; background-repeat:no-repeat;}
 
 section#slider .inner{ background-image:url(images/dshadow.png); background-position:bottom center; background-repeat:repeat-x}
@@ -324,6 +364,10 @@ section#slider , section#slider a , section#slider p{ color:#fff; text-decoratio
 section#slider p ,  section#slider .cat{ font-family:Georgia, "Times New Roman", Times, serif; font-size:18px; font-style:italic }
 section#slider a.morelink{font-family: 'Pluto' , helvetica, arial, sans-serif; color:#fff; float:right; font-weight:900; font-size:16px;}
 
+section#slider {
+background-size: cover;
+background-position: center bottom;
+}
 
 .carousel-indicators {
 position: absolute;
@@ -338,11 +382,10 @@ list-style: none;
 left:10%
 }
 
-.single section#slider h1{
-padding: 20px;
-margin: 182px 0 0 0;
-min-height: 118px; font-size:29px;
-}
+.single section#slider h1{padding: 20px;margin: 182px 0 0 0;min-height: 118px; font-size:29px;}
+.single-turismo section#slider{ background-size:100% auto}
+.single-turismo section#slider h1{margin: 292px 0 0 0;}
+.single-turismo section#slider{height:410px}
 
 .bx-wrapper {position: relative;padding: 0;*zoom: 1; z-index:0; }
 .slider .bx-wrapper {position: relative;padding: 0;*zoom: 1; z-index:0; margin-top:85px !important }
@@ -398,25 +441,36 @@ section#subscribe{ background-color:#f2f2f2; padding:30px;}
 
 section#servicios figure{ background-color:#efefef; }
 /*section#servicios figure figcaption::before{ width:80px; content:''; background-color: #f30; display:block; float:left}*/
-section#servicios figure figcaption h3{ font-size:14px; color:#3d3d3d; margin:0px; padding: 10px 0}
+section#servicios figure figcaption h3{ font-size:14px; color:#3d3d3d; margin:0px; padding: 10px 0 5px}
 section#servicios figure figcaption p{ margin-bottom:0 ; font-family:Georgia, "Times New Roman", Times, serif; font-size:14px; font-style:italic}
 
 section#servicios_page{ text-align:center}
 section#servicios_page ul{ text-align:center; margin: 0px !important; padding:0px !important}
 section#servicios_page ul li{ list-style:none; display:inline-block; width:12%;}
 section#servicios_page ul li a { border-radius: 100px;display: block;overflow: hidden;border: 2px solid #155980;margin: 2px;}
-section#servicios_page ul li img { width: 100%;height: auto;padding: 4px;border: 2px #fff solid;border-radius: 100px;}
+section#servicios_page ul li img { width: 100%;height: auto;padding: 4px;border: 2px #fff solid;border-radius: 100px; margin:8px auto;}
 
 aside#turismo { background-color: #f2f2f2;}
 aside#turismo figure figcaption{ background-color:#56a32a; padding:0 0 0 10px; color:#fff; }
 aside#turismo figure figcaption p , aside#turismo figure figcaption h3{ color:#fff}
 aside#turismo figure figcaption .link{ float:right}
-aside#turismo figure figcaption .link a { padding: 10px 15px 0px 40px;background-color: #fff;display: inline-block;border-top-left-radius: 90px;margin-top: 30px;font-size: 40px;font-weight: 900;color: #000;}
+aside#turismo figure figcaption .link a { background-color: #fff; display: inline-block; border-top-left-radius: 90px; margin-top: 40px; font-size: 20px; font-weight: 900; color: #155980;}
 
 main#turismo .col-md-2{ padding-bottom:1px;}
 
 section#map #map_canvas{ height:500px;}
 
+section#documentos{}
+section#documentos h3 , section#documentos h5{ margin:0px; padding:0px}
+section#documentos .ico-link {padding: 20px; border-radius: 60px; margin-left: 5px; margin-top: 0px; display: block; color: #fff; border: none; max-width: 88%;}
+
+.post-type-archive-turismo figure figcaption h3{ font-size:14px; color:#3d3d3d; margin:0px; padding: 10px 0; text-align: left}
+.post-type-archive-turismo figure figcaption{ background-color:#56a32a; padding:0 0 0 10px; color:#fff; position:absolute; bottom: 0px; width:100% ; height:65px;}
+.post-type-archive-turismo figure figcaption p , .post-type-archive-turismo figure figcaption h3{ color:#fff; }
+/*
+.post-type-archive-turismo figure figcaption .link{ float:right}
+.post-type-archive-turismo figure figcaption .link a { padding: 10px 15px 0px 40px;background-color: #fff;display: inline-block;border-top-left-radius: 90px;margin-top: 30px;font-size: 40px;font-weight: 900;color: #000;}
+*/
 .nav-tabs {
 border: none;
 text-align: center;
@@ -441,6 +495,9 @@ color:#fff;
 background-color:#828282 !important;
 }
 
+.active>a.fa.fa-circle,
+.nav-tabs>li>a.fa.fa-circle {padding: 0px; font-size: 20px; border-radius: 50%; height: auto; background: none !important; border: 10px solid #828282 !important; line-height: 90%; }
+
 .nav-tabs li.active a {
 border: none !important;
 border-radius: 70px;
@@ -448,9 +505,10 @@ color:#f79700 !important;
 }
 
 .wp-paginate {text-align: right;}
-.wp-paginate li a , .wp-paginate li .current {border-radius: 60px;padding: 8px 0;font-size: 12px;line-height: 100%;height: 30px;width: 30px;display: inline-block;text-align: center;}
+.wp-paginate li a , .wp-paginate li .current {border-radius: 60px; padding: 9px; font-size: 12px; line-height: 100%; height: 30px; width: 30px; display: inline-block; text-align: center; background: #fff; font-family: 'Pluto'; border: 1px solid #155980; color:#155980;}
 
-.wp-paginate li .current{ background-color:#e21717; border: none}
+.wp-paginate li .current{ background: #155980 !important; border: none; padding: 10px 0; font-family: 'Pluto' !important; color:#fff !important; }
+.wp-paginate a:hover, .wp-paginate a:active{background:#1970a1 !important; color:#fff !important;}
 
 .thumbnail {border: 1px solid #fff ;padding: 0px; margin: 0px;}
 .thumbnail img { display:block;}
@@ -475,11 +533,11 @@ color:#f79700 !important;
 /*******************************************************************************************/
 
 article { color:#525252}
-article h4{ font-weight:700}
-.category article h4{ font-weight:700; text-align:left; color:#525252}
+article h4{ font-weight:700; line-height: 140%;}
+.category article h4{ font-weight:700; text-align:left; color:#525252; line-height:140%; padding-top: 10px;}
 article p{font-family:Georgia, "Times New Roman", Times, serif; font-style:italic}
 article footer {font-family: 'Pluto' , helvetica, arial, sans-serif; font-weight:300; font-stretch:condensed; padding: 0}
-article footer .dte{ color:#525252}
+article footer .dte{ color:#525252; font-size:13px;}
 article footer .morelink { color:#ce313f; float:right; font-weight:700}
 
 
@@ -499,8 +557,17 @@ line-height: 100%;
 
 .sslc .btn{ border-radius:100px; padding:28px;}
 
-.asidemenu li{ text-align:left;}
-.asidemenu li a{ color:#fff;}
+.asidemenu li{ text-align:left; background: #bd355b; color:#fff; font-family: 'Pluto'; font-weight:500; font-size: 18px; padding:10px 5px; -webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+.asidemenu li:hover{background:#AB0030; -webkit-transition: all 0.5s ease-in-out;
+-moz-transition: all 0.5s ease-in-out;
+-ms-transition: all 0.5s ease-in-out;
+-o-transition: all 0.5s ease-in-out;
+transition: all 0.5s ease-in-out;}
+.asidemenu li a{ color:#fff; text-decoration:none;}
 
 /*******************************************************************************************/
 /*************************************TIMELINR**********************************************/
@@ -542,7 +609,7 @@ footer{ color:#fff; padding:30px 0}
 footer .info, footer .info a{font-family: Georgia, "Times New Roman", Times, serif; font-size:16px; font-style:italic; font-weight:300; color:#fff;}
 
 ul#menu-footer-menu li.menu-item-has-children {}
-ul#menu-footer-menu li.menu-item-has-children a{ font-family:pluto, helvetica, arial, sans-serif; font-weight:900; color:#fff; font-size:18px; background-color:transparent; text-transform: uppercase; text-decoration:none}
+ul#menu-footer-menu li.menu-item-has-children a{ font-family:pluto, helvetica, arial, sans-serif; font-weight:900; color: #fff; font-size:18px; background-color:transparent; text-transform: uppercase; text-decoration:none}
 ul#menu-footer-menu li .sub-menu a{ font-size:15px; font-weight:300; text-transform: none}
 
 .copy span{ padding:10px; display:block; color:#fff; background-color: #e21717 ; font-size: 14px; font-weight:300}
@@ -553,12 +620,26 @@ ul#menu-footer-menu li .sub-menu a{ font-size:15px; font-weight:300; text-transf
 
 #footer #menu-footer-menu .sub-menu a {padding-left: 20px; background-image: url(images/arrow.png);background-repeat: no-repeat;background-position: 0px 10px;}
 
-@media screen and (max-width:767px){ 
+@media screen and (min-width: 1024px){}
+@media (max-width:1023px) and (min-width: 935px){}
+@media (max-width:934px) and (min-width: 768px){
+    /* Header */
+    .navbar .logo {width: 90%; height: auto; margin-right: 0; padding: 0; } 
+    .navbar-header {float: none; width: 45%; margin: 15px auto 0; }
+    .navbar-brand{margin-right: 0;}
+    .navbar-brand img{margin: 0 auto; display: block;}
+    #menu-navegacion li a{font-size: 16px ;}
+    /* Slider home */
+    section#slider .base .inside{padding-top: 150px;}
+
+}
+@media (max-width:767px){ 
 
 .col-esp {margin: 0 10px 10px; padding: 0 !important;}
 .col-esp img {width: 100%;height: auto;}
 
-section#slider h2{ font-size:22px;}
+section#slider h2{ font-size:22px; margin-bottom: 5px; margin-top: 5px;}
+section#slider a.morelink{float:left;}
 
 .sub-menu li {border-bottom:1px solid #f2f2f2;}
 

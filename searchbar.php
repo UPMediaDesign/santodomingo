@@ -36,7 +36,7 @@
             
             <div class="col-xs-12 col-md-6">
             	<div style="margin-right:-30px">
-                    <div class="searchh col-xs-5">
+                    <div class="searchh col-xs-4 col-sm-5">
                         <form method="get" id="searchform" action="<?php bloginfo('url')?>">
                             <label class="hidden" for="s"></label>
                             <a onclick="document.getElementById('searchform').submit();"><span class="fa fa-search"></span></a>
@@ -53,7 +53,7 @@
                         </div>
                     </div>
                    
-                    <div class="condition col-xs-2 skw col-esp">
+                    <div class="condition col-sm-2 col-xs-4 skw col-esp">
                     	<div class="inskw">
                             <div class="mindeg izq"><?php echo round($min);?>ª <span class="fa fa-cloud fa-fw"></span></div>
                             <div class="maxdeg der"><?php echo round($max);?>ª <span class="fa fa-cloud fa-fw actdeg"></span></div>

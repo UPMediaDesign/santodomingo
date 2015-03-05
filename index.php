@@ -20,7 +20,7 @@
                     <div class="cat">Noticias</div>
                     <div class="clear"></div>
                     <h2><a href="<?php echo get_permalink($post->ID)?>"><?php echo $post->post_title?></a></h2>
-                    <p><?php echo get_the_excerpt($post->ID)?></p>
+                    <p><?php echo substr($post->post_content , 0, 100)?>...</p>
                     <a href="<?php echo get_permalink($post->ID)?>" class="morelink"><span class="fa fa-circle"></span> Leer más</a>
                 </div>
             </div>
@@ -46,12 +46,23 @@
 	<div class="container">
 		<div class="row">
         	<div class="col-md-6 col-xs-6">
-            	<div class="col-md-8 desktop"></div>
-            	<div class="col-md-4 col-xs-12"><h2>Fono ayuda</h2></div>
+            	<div class="col-md-7 desktop phone">
+                    <h3>800 444 2700</h3>
+                </div>
+            	<div class="col-md-5 col-xs-12 phone">
+                    <h2>Fono ayuda</h2>
+                    <span>Claritas est etiam processus.</span>
+                </div>
             </div>
         	<div class="col-md-6 col-xs-6">
-            	<div class="col-xs-4 col-xs-12"><h2>Transparencia</h2></div>
-                <div class="col-xs-8 desktop"></div>
+            	<div class="col-md-4 col-xs-12 trans">
+                    <img src="<?php bloginfo('template_directory')?>/images/trans-eye.png" alt="">
+                    <h2>Transparencia</h2>
+                </div>
+                <div class="col-xs-8 desktop ">
+                    <a class="transtag" href=""><img style="max-width: 145px !important; width:100% !important; margin-top: 40px;" src="<?php bloginfo('template_directory')?>/images/leytransparencia.png" alt=""></a>
+                    <a class="transtag" href=""><img style="max-width: 145px !important; width:100% !important; margin-top: 40px;" src="<?php bloginfo('template_directory')?>/images/transparencia-activa.png" alt=""></a>
+                </div>
             </div>
         </div>
 	</div>
@@ -79,7 +90,7 @@
                                 <h4><?php echo $post->post_title?></h4>
                                 <p><?php echo get_the_excerpt($post->ID)?></p>
                                 <footer class="row">
-                                    <div class="col-md-8">Fecha de publicación: 30 de abril 2014</div>
+                                    <div class="col-md-8 col-xs-8 publish"><p>Publicado el: <?php echo get_the_date(); ?></p></div>
                                     <div class="col-md-4"><a href="<?php echo get_permalink($post->ID)?>" class="morelink"><span class="fa fa-circle"></span> Leer más</a></div>
                                 </footer>
                             </div>
@@ -94,7 +105,7 @@
                                 <h4><?php echo get_the_title($post->ID)?></h4>
                                 <p><?php echo get_the_excerpt($post->ID)?></p>
                                 <footer class="row">
-                                    <div class="col-md-9">Fecha de publicación: 30 de abril 2014</div>
+                                    <div class="col-md-9 publish"><p>Publicado el: <?php echo get_the_date(); ?></p></div>
                                     <div class="col-md-3"><a href="<?php echo get_permalink($post->ID)?>" class="morelink"><span class="fa fa-circle"></span> Leer más</a></div>
                                 </footer>
                             </div>
@@ -112,10 +123,14 @@
             	<h3>&nbsp;</h3>
                 <div class="clear sepatator border"></div> 
             	<div class="box" id="box1">
-                	<img src="<?php bloginfo('template_directory')?>/images/stdtv.png" width="100%" alt="" />
+                    <a href="<?php echo get_bloginfo('url')?>/santodomingotv/">
+                	   <img src="<?php bloginfo('template_directory')?>/images/stdtv.png" width="100%" alt="" />
+                    </a>
                 </div>
             	<div class="box" id="box2">
-                	<img src="<?php bloginfo('template_directory')?>/images/seguridad.png" width="100%" alt="" />
+                    <a href="<?php echo get_bloginfo('url')?>/servicio/seguridad-ciudadana/">
+                	   <img src="<?php bloginfo('template_directory')?>/images/seguridad.png" width="100%" alt="" />
+                    <a href=""></a>
                 </div>
             </aside>
         </div>
@@ -190,24 +205,39 @@
                 	
                     <div role="tabpanel">
                         <div class="tab-content">
-                        
-                        	<?php $turismo = get_posts(array('post_type' => 'turismo' , 'numberposts' => 2 , 'tipo' => 'lugar-turistico'))?>
+                             
+							<?php wp_reset_query()?>
+                        	<?php $turismo = get_posts(array('post_type' => 'turismo' , 'tipo' => 'lugar-turistico'))?>
                             <?php foreach($turismo as $place):?>
-                                <figure class="col-md-12">
-                                    <a href="<?php echo get_permalink($place->ID)?>"><?php echo get_the_post_thumbnail($place->ID , 'col-6' , array('class' =>'img-responsive'))?></a>
+                            
+                            <figure class="col-md-12">
+                                     <a href="<?php echo get_permalink($place->ID)?>"><?php echo get_the_post_thumbnail($place->ID , 'col-6' , array('class' =>'img-responsive'))?></a>
                                     <figcaption>
                                     	<div class="link"><a href="<?php echo get_permalink($place->ID)?>">+</a></div>
                                         <h3><?php echo $place->post_title?></h3>
                                         <p><?php echo $place->post_excerpt?></p>
                                         <div class="clear"></div>
                                     </figcaption>
-                                </figure>
+                                
                                 <div class="clear separator"></div>
-                            <?php endforeach;?>
+                            </figure>   
+                            
+                            <?php endforeach?>
+                            
                                 
                         </div>
                         
                     </div>
+                    
+                    <!--
+                    <div class="col-md-12">
+                            <ul class="nav nav-tabs" role="tablist">
+                                <li role="presentation" class="active"><a href="#turismo-1" aria-controls="turismo-1" role="tab" data-toggle="tab"><span class="fa fa-circle fa-fw"></span></a></li>
+                                <li role="presentation"><a href="#turismo-2" aria-controls="turismo-2" role="tab" data-toggle="tab"><span class="fa fa-circle fa-fw"></span></a></li>
+                            </ul>
+                    </div>
+                    -->
+
                 </div>
             
             </aside>
@@ -220,7 +250,7 @@
 <section id="subscribe">
 	<div class="container">
 		<div class="row">
-        	<div class="col-md-12">
+        	<div class="col-md-12 form">
             	<h3>Suscríbete al Newsletter</h3>
                 <p class="subtitle">Formas humanitatis per seacula quarta decima et quinta.</p>
                 <div class="row"><?php echo do_shortcode('[contact-form-7 id="10" title="Suscripción Newsletter"]')?></div>

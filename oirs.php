@@ -1,3 +1,8 @@
+<?php
+/*
+Template Name: OIRS
+*/
+?>
 <?php get_header()?>
 
 <?php get_template_part('searchbar')?>
@@ -34,7 +39,6 @@
         </div>
 	</div>
 </main>
-<div class="clear separator"></div>
 
 <?php $boxes = get_field('boxes')?>
 <?php if($boxes){?>
@@ -75,7 +79,7 @@
 		</section>
         
         <?php }elseif($box['acf_fc_layout'] == 'separador'){?>
-        	<div class="clear separator"></div>
+<!--         	<div class="clear separator"></div> -->
         <?php }elseif($box['acf_fc_layout'] == 'acordeones'){?>
         	<section>
         		<div class="container">
@@ -127,10 +131,10 @@
 		<div class="row">
 			<div class="col-md-8 col-md-offset-2">
             <div class="row">
-                <div class="col-md-8">
+                <div class="col-xs-8">
                     <h3>Documentos disponibles</h3>
                 </div>
-                <div class="col-md-4">
+                <div class="col-xs-4">
                     <h5><a href="<?php echo get_post_type_archive_link('documentos')?>" class="view-all btn btn-sm btn-primary btn-block">Ver todos los documentos</a></h5>
                 </div>
             </div>
@@ -140,17 +144,15 @@
                         <div class="row">
                             <div class="col-md-1 col-esp">
                                 <a href="<?php echo wp_get_attachment_url(get_field('documento',$doc->ID))?>" class="ico-link clr-<?php echo $post->post_name?>">
-                                	<span class="fa fa-lg <?php echo get_icon_for_attachment(get_field('documento',$doc->ID))?>">
-                                        <h4 class="mobile"><?php echo $doc->post_title?></h4>
-                                    </span>
+                                	<span class="fa fa-lg <?php echo get_icon_for_attachment(get_field('documento',$doc->ID))?>"></span>
                                 </a> 
                                 <?php //echo get_type_for_attachment(get_field('documento',$doc->ID))?>
                             </div>
                             <div class="col-md-11">
-                                <h4 class="hide-on-mobile"><a href="<?php echo wp_get_attachment_url(get_field('documento',$doc->ID))?>"><?php echo $doc->post_title?></a></h4>
+                                <h4><a href="<?php echo wp_get_attachment_url(get_field('documento',$doc->ID))?>"><?php echo $doc->post_title?></a></h4>
                                 <p><?php echo $doc->post_content?></p>
                                 <footer class="row">
-                                <div class="col-md-9 dte">Publicado el: <?php echo get_the_date('l, j \d\e F \d\e Y' , $doc->ID)?></div>
+                                <div class="col-md-9 dte">Fecha de publicación: <?php echo get_the_date('l, j \d\e F \d\e Y' , $doc->ID)?></div>
                                 <div class="col-md-3"><a href="<?php echo wp_get_attachment_url(get_field('documento',$doc->ID))?>" class="morelink"><span class="fa fa-circle"></span> Leer más</a></div>
                             </footer>
                             </div>
@@ -160,10 +162,10 @@
                 	
                 <?php endforeach;?>
                 <div class="row">
-                    <div class="col-md-8">
+                    <div class="col-xs-8">
                         <h3>&nbsp;</h3>
                     </div>
-                    <div class="col-md-4">
+                    <div class="col-xs-4">
                         <h5><a href="<?php echo get_post_type_archive_link('documentos')?>" class="view-all btn btn-sm btn-primary btn-block">Ver todos los documentos</a></h5>
                     </div>
             	</div>

@@ -28,6 +28,37 @@
             </div>
         	<div class="col-md-8">
             	<?php echo apply_filters('the_content' , $post->post_content)?>
+
+                <a class="twitter-share-button" href="https://twitter.com/share" data-via="twitterdev"> Tweet </a>
+
+                <div class="fb-share-button" data-href="<?php echo get_permalink(); ?>" data-layout="button_count"></div>
+
+                <div id="fb-root"></div>
+
+                <div class="clear separator"></div>
+				
+				<?php $gallery = get_field('slide_gallery') ?>
+                <?php if($gallery){?>
+                <!-- Galeria Slider -->
+                
+                <div class="row">
+                	<?php $imgcount = 0?>
+                    <?php foreach($gallery as $image):?>
+                    <?php $imgcount++?>
+                    <div class="col-md-2 col-xs-4">
+                        <a href="<?php echo $image['url'] ?>" rel="shadowbox[gal]">
+                          <img src="<?php echo $image['sizes']['thumbnail'] ?>" class="img-responsive" alt="...">
+                        </a>
+                    </div>
+                    <?php if($imgcount % 6 == 0){echo '<div class="clear separator desktop"></div>';}?>
+                    <?php if($imgcount % 3 == 0){echo '<div class="clear separator mobile"></div>';}?>
+                    <?php endforeach?>       
+                </div>
+                
+                <div class="clear separator"></div>
+                <!-- Galeria Slider -->
+				<?php }?>
+                
             </div>
             <div class="col-md-1">
             	<div class="date clr-5">
